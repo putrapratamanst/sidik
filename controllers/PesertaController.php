@@ -2,8 +2,8 @@
 
 namespace app\controllers;
 
-use app\Models\Peserta;
-use app\Models\PesertaSearch;
+use app\models\Peserta;
+use app\models\PesertaSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;

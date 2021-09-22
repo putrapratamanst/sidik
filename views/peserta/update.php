@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-/* @var $model app\Models\Peserta */
+/* @var $model app\models\Peserta */
 
 $this->title = 'Update Peserta: ' . $model->id;
 $this->params['breadcrumbs'][] = ['label' => 'Peserta', 'url' => ['index', 'type'=> $dataDiklat['type']]];

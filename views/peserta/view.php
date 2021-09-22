@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model app\Models\Peserta */
+/* @var $model app\models\Peserta */
 
 $this->title = "Nama Peserta: " .$model->nama;
 $this->params['breadcrumbs'][] = ['label' => 'Peserta', 'url' => ['index', 'type'=> $dataDiklat['type']]];

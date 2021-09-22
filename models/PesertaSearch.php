@@ -4,11 +4,11 @@ namespace app\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\Models\Peserta;
+use app\models\Peserta;
 use Codeception\Coverage\Filter;
 
 /**
- * PesertaSearch represents the model behind the search form of `app\Models\Peserta`.
+ * PesertaSearch represents the model behind the search form of `app\models\Peserta`.
  */
 class PesertaSearch extends Peserta
 {
