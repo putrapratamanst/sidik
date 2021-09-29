@@ -61,6 +61,10 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        if (Yii::$app->user->isGuest) {
+            $this->layout = 'main_user';
+        }
+
         return $this->render('index');
     }
 
@@ -71,12 +75,16 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
+        $this->layout = 'main_user';
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
+            if (!Yii::$app->user->isGuest) {
+                return $this->redirect(['peserta/index']);
+            }
             return $this->goBack();
         }
 

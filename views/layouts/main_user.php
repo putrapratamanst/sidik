@@ -33,38 +33,16 @@ AppAsset::register($this);
             // 'brandLabel' => "Yii::$app->name",
             // 'brandUrl' => Yii::$app->homeUrl,
             'options' => [
-                'class' => 'navbar navbar-expand-md navbar-dark bg-dark fixed-top',
+                'class' => 'navbar navbar-expand-md navbar-dark bg-primary fixed-top',
             ],
         ]);
-
+        
         echo Nav::widget([
             'options' => ['class' => 'navbar-nav'],
             'items' => [
-                // ['label' => 'Beranda', 'url' => ['/site/index']],
-                [
-                    'label' => 'Diklat Struktural',
-                    'items' => [
-                        ['label' => 'PKN (Pelatihan Kepemimpinan Nasional)', 'url' => '/peserta/index?type=struktural_pkn'],
-                        ['label' => 'PKA (Pelatihan Kepemimpinan Administrasi)', 'url' => '/peserta/index?type=struktural_pka'],
-                        ['label' => 'PKP (Pelatihan Kepemimpinan Pengawas)', 'url' => '/peserta/index?type=struktural_pkp'],
-                    ],
-                ],
-                [
-                    'label' => 'Diklat Fungsional',
-                    'items' => [
-                        ['label' => 'Diklat Calon Kepala Sekolah', 'url' => '/peserta/index?type=fungsional_kepsek'],
-                    ],
-                ],
-                [
-                    'label' => 'Diklat Teknis',
-                    'items' => [
-                        ['label' => 'Diklat Darurat Bencana', 'url' => '/peserta/index?type=teknis_bencana'],
-                        ['label' => 'Diklat Pemadam Kebakaran', 'url' => '/peserta/index?type=teknis_kebakaran'],
-                        ['label' => 'Diklat Camat', 'url' => '/peserta/index?type=teknis_camat'],
-                    ],
-                ],
-
-                Yii::$app->user->isGuest ? (['label' => 'Login', 'url' => ['/site/login']]) : ('<li>'
+                ['label' => 'Beranda', 'url' => ['/site/index']],
+                
+                Yii::$app->user->isGuest ? (['label' => 'Login Admin', 'url' => ['/site/login']]) : ('<li>'
                     . Html::beginForm(['/site/logout'], 'post', ['class' => 'form-inline'])
                     . Html::submitButton(
                         'Logout (' . Yii::$app->user->identity->username . ')',
