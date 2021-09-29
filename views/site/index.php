@@ -119,13 +119,28 @@
             <hr class="featurette-divider">
 
             <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                <div class="col-md-12">
+                    <h2 class="featurette-heading">PNS yang mengajukan permohonan Tugas Belajar harus melampirkan kelengkapan administrasi sebagai berikut : </h2>
+                    <p class="lead">
+                        <ul>
+                            <li>Surat Pengantar dari Kepala SKPD</li>
+                            <li>Surat Permohonan dari PNS yang Bersangkutan</li>
+                            <li>Foto copy SK Pangkat Terakhir Dilegalisir;</li>
+                            <li>Foto copy SKP 1(satu) tahun terakhir yang dilegalisir;</li>
+                            <li>Foto copy Ijazah dan Transkip nilai terakhir yang dilegalisir;</li>
+                            <li>Surat Keterangan dari Kepala SKPD yang menerangkan bahwa keterkaitan antara pendidikan yang ditempuh dengan tugas yang dijalankan;</li>
+                            <li>Surat Keterangan tidak sedang menjalani hukuman disiplin dari Kepala SKPD;</li>
+                            <li>Surat Keterangan uraian tugas PNS yang bersangkutan dari Kepala SKPD;</li>
+                            <li>Surat Keterangan dari Pimpinan Lembaga Pendidikan bahwa PNS yang bersangkutan lulus ujian masuk;</li>
+                            <li>Foto copy Surat Keterangan Akreditasi Perguruan Tinggi dari Badan Akreditasi Nasional Perguruan Tinggi (BAN-PT) dilegalisir.</li>
+                            <li>Surat Pernyataan Tidak Menuntut Penyesuaian Ijazah kepangkat yang lebihtinggi kecuali formasi mengijinkan.</li>
+                            <li>Surat Pernyataan Bersedia Mengabdi pada Pemerintah Daerah setelah menyelesaikan pendidikan di atas materai.</li>
+                        </ul>
+                    </p>
                 </div>
-                <div class="col-md-5">
+                <!-- <div class="col-md-5">
                     <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22500%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17c2cdf5edc%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A25pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17c2cdf5edc%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22185.1171875%22%20y%3D%22261.1%22%3E500x500%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
-                </div>
+                </div> -->
             </div>
 
             <hr class="featurette-divider">
