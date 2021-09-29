@@ -83,7 +83,7 @@ class SiteController extends Controller
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
             if (!Yii::$app->user->isGuest) {
-                return $this->redirect(['peserta/index']);
+                return $this->redirect(['peserta/index', 'type' => "struktural_pkn"]);
             }
             return $this->goBack();
         }

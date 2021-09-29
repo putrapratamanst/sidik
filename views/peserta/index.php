@@ -7,12 +7,12 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\PesertaSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Peserta';
+$this->title = 'Peserta' . " ". $dataDiklat['diklat'];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="peserta-index">
 
-    <h1><?= Html::encode($this->title) . " ". $dataDiklat['diklat'] ?></h1>
+    <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
         <?= Html::a('Tambah Peserta' , ['create', 'type'=> $dataDiklat['type']], ['class' => 'btn btn-success']) ?>

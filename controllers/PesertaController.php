@@ -206,4 +206,21 @@ class PesertaController extends Controller
 
         throw new NotFoundHttpException('The requested page does not exist.');
     }
+
+    public function actionList($type)
+    {
+        $dataDiklat = $this->getType();
+        $this->layout = "main_user";
+
+        $searchModel = new PesertaSearch();
+        $dataProvider = $searchModel->search($this->request->queryParams, $dataDiklat, false);
+
+        return $this->render('list', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
+            'dataDiklat' => $dataDiklat,
+            'type' => $type,
+
+        ]); 
+    }
 }

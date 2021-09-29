@@ -63,13 +63,17 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="https://images.unsplash.com/photo-1542029722221-1c7dc4b06781?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80" alt="First slide">
+                    <img class="d-block w-100" src="<?= Yii::$app->request->baseUrl ?>/image/1.jpeg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>DIKLAT CALON KEPALA SEKOLAH</h5>
+                        <p>Diadakan pada 02 s/d 04 Juni 2021 di Kabupaten Padang Lawas</p>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="https://images.unsplash.com/photo-1541890289-b86df5bafd81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1445&q=80" alt="Second slide">
+                    <img class="d-block w-100" src="<?= Yii::$app->request->baseUrl ?>/image/2.jpeg" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="https://images.unsplash.com/photo-1542091607-f2c384a6af13?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1472&q=80" alt="Third slide">
+                    <img class="d-block w-100" src="<?= Yii::$app->request->baseUrl ?>/image/3.jpeg" alt="Third slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -91,21 +95,21 @@
             <div class="row">
                 <div class="col-lg-4">
                     <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                    <h2>Heading</h2>
+                    <h2>Diklat Struktural</h2>
                     <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                    <p><a class="btn btn-secondary" href="/peserta/list?type=struktural" role="button">Selengkapnya »</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
                     <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                    <h2>Heading</h2>
+                    <h2>Diklat Fungsional</h2>
                     <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                    <p><a class="btn btn-secondary" href="/peserta/list?type=fungsional" role="button">Selengkapnya »</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
                     <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                    <h2>Heading</h2>
+                    <h2>Diklat Teknis</h2>
                     <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                    <p><a class="btn btn-secondary" href="/peserta/list?type=teknis" role="button">Selengkapnya »</a></p>
                 </div><!-- /.col-lg-4 -->
             </div><!-- /.row -->
 
