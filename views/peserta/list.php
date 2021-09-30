@@ -21,13 +21,13 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="container">
             <div class="row">
                 <div class="col-sm">
-                    <a class="btn btn-primary" href="/peserta/list?type=fungsional" role="button"> PKN (Pelatihan Kepemimpinan Nasional)</a>
+                    <a class="btn btn-primary" href="/peserta/list?type=struktural_pkn" role="button"> PKN (Pelatihan Kepemimpinan Nasional)</a>
                 </div>
                 <div class="col-sm">
-                    <button class="btn btn-danger" type="button">PKA (Pelatihan Kepemimpinan Administrasi)</button>
+                    <button class="btn btn-danger" href="/peserta/list?type=struktural_pka" type="button">PKA (Pelatihan Kepemimpinan Administrasi)</button>
                 </div>
                 <div class="col-sm">
-                    <button class="btn btn-secondary" type="button">PKP (Pelatihan Kepemimpinan Pengawas)</button>
+                    <button class="btn btn-secondary" href="/peserta/list?type=struktural_pkp" type="button">PKP (Pelatihan Kepemimpinan Pengawas)</button>
                 </div>
             </div>
         </div>
@@ -44,7 +44,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="container">
             <div class="row">
                 <div class="col-sm">
-                    <a class="btn btn-primary" href="/peserta/list?type=fungsional" role="button"> Diklat Calon Kepala Sekolah</a>
+                    <a class="btn btn-primary" href="/peserta/list?type=fungsional_kepsek" role="button"> Diklat Calon Kepala Sekolah</a>
                 </div>
             </div>
         </div>
@@ -59,13 +59,13 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="container">
             <div class="row">
                 <div class="col-sm">
-                    <a class="btn btn-primary" href="/peserta/list?type=fungsional" role="button"> Diklat Darurat Bencana</a>
+                    <a class="btn btn-primary" href="/peserta/list?type=teknis_bencana" role="button"> Diklat Darurat Bencana</a>
                 </div>
                 <div class="col-sm">
-                    <button class="btn btn-danger" type="button">Diklat Pemadam Kebakaran</button>
+                    <button class="btn btn-danger" href="/peserta/list?type=teknis_kebakaran" type="button">Diklat Pemadam Kebakaran</button>
                 </div>
                 <div class="col-sm">
-                    <button class="btn btn-secondary" type="button">Diklat Camat</button>
+                    <button class="btn btn-secondary" href="/peserta/list?type=teknis_camat" type="button">Diklat Camat</button>
                 </div>
             </div>
         </div>
@@ -73,7 +73,8 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php
     }
     ?>
-
+    <?php if($filter == true){
+        ?>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
@@ -88,9 +89,10 @@ $this->params['breadcrumbs'][] = $this->title;
             'tmt_jabatan',
             //'type',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            // ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
+    <?php } ?>
 
 
 </div>

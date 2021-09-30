@@ -209,6 +209,10 @@ class PesertaController extends Controller
 
     public function actionList($type)
     {
+        $filter = true;
+        if ($type == "struktural" || $type == "fungsional" || $type == "teknis") {
+            $filter = false;
+        }
         $dataDiklat = $this->getType();
         $this->layout = "main_user";
 
@@ -220,7 +224,7 @@ class PesertaController extends Controller
             'dataProvider' => $dataProvider,
             'dataDiklat' => $dataDiklat,
             'type' => $type,
-
+            'filter' =>$filter,
         ]); 
     }
 }
