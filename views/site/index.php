@@ -219,7 +219,7 @@
             <hr class="featurette-divider">
 
             <div class="row featurette">
-                <div class="col-md-7">
+            <div class="col-md-7 order-md-2">
                     <h2 class="featurette-heading">SYARAT PENGURUSAN DIKLAT PKP (PIM TK.IV) :</h2>
                     <p class="lead">
                     <ul>
@@ -230,7 +230,7 @@
                     </ul>
                     </p>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-5 order-md-1">
                     <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="<?= Yii::$app->request->baseUrl ?>/image/3.jpeg" data-holder-rendered="true" style="width: 500px; height: 500px;">
                 </div>
             </div>
@@ -257,7 +257,7 @@
             <hr class="featurette-divider">
 
             <div class="row featurette">
-                <div class="col-md-7">
+            <div class="col-md-7 order-md-2">
                     <h2 class="featurette-heading">SYARAT PENGURUSAN DIKLAT CALON KEPALA SEKOLAH :</h2>
                     <p class="lead">
                     <ul>
@@ -271,7 +271,7 @@
                     </ul>
                     </p>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-5 order-md-1">
                     <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="<?= Yii::$app->request->baseUrl ?>/image/3.jpeg" data-holder-rendered="true" style="width: 500px; height: 500px;">
                 </div>
             </div>
