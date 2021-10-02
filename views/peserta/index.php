@@ -35,7 +35,9 @@ $this->params['breadcrumbs'][] = $this->title;
             'tmt_jabatan',
             //'type',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            ['class' => 'yii\grid\ActionColumn',
+            'headerOptions' => ['style' => 'width:8%'],
+        ],
         ],
     ]); ?>
 

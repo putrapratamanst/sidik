@@ -13,7 +13,11 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="peserta-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
-
+    <?php
+    if ($type != "struktural" || $type != "fungsional" || $type != "teknis") {
+    ?>
+        <?= Html::a('<i class="fas fa-angle-double-left"></i>Kembali', ['list', 'type' => "struktural"], ['class' => 'btn btn-success']) ?>
+    <?php } ?>
     <?php
     if ($type == "struktural") { ?>
 
@@ -53,7 +57,7 @@ $this->params['breadcrumbs'][] = $this->title;
     }
     ?>
 
-<?php
+    <?php
     if ($type == "teknis") { ?>
         <p>
         <div class="container">
@@ -73,25 +77,25 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php
     }
     ?>
-    <?php if($filter == true){
-        ?>
-    <?= GridView::widget([
-        'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
-        'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+    <?php if ($filter == true) {
+    ?>
+        <?= GridView::widget([
+            'dataProvider' => $dataProvider,
+            'filterModel' => $searchModel,
+            'columns' => [
+                ['class' => 'yii\grid\SerialColumn'],
 
-            // 'id',
-            'nama',
-            'nip',
-            'unit_kerja',
-            'jabatan',
-            'tmt_jabatan',
-            //'type',
+                // 'id',
+                'nama',
+                'nip',
+                'unit_kerja',
+                'jabatan',
+                'tmt_jabatan',
+                //'type',
 
-            // ['class' => 'yii\grid\ActionColumn'],
-        ],
-    ]); ?>
+                // ['class' => 'yii\grid\ActionColumn'],
+            ],
+        ]); ?>
     <?php } ?>
 
 
