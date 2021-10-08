@@ -31,7 +31,7 @@ class Peserta extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['nama', 'nip', 'unit_kerja', 'jabatan', 'tmt_jabatan', 'type'], 'required', 'message' => '{attribute} harus diisi'],
+            [['nama', 'nip', 'unit_kerja', 'jabatan', 'tmt_jabatan', 'type', 'pangkat'], 'required', 'message' => '{attribute} harus diisi'],
             [['nip'], 'integer'],
             [['tmt_jabatan'], 'safe'],
             [['nama', 'unit_kerja', 'jabatan', 'type'], 'string', 'max' => 255],
@@ -51,6 +51,7 @@ class Peserta extends \yii\db\ActiveRecord
             'jabatan' => 'Jabatan',
             'tmt_jabatan' => 'Tmt Jabatan',
             'type' => 'Type',
+            'pangkat' => 'Pangkat/Golongan'
         ];
     }
 }

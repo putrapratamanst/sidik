@@ -18,9 +18,11 @@ use yii\jui\DatePicker;
 
     <?= $form->field($model, 'nama')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'nip')->textInput() ?>
+    <?= $form->field($model, 'nip')->textInput(["type" => 'number']) ?>
 
     <?= $form->field($model, 'unit_kerja')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'pangkat')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'jabatan')->textInput(['maxlength' => true]) ?>
 

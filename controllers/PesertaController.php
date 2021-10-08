@@ -121,11 +121,9 @@ class PesertaController extends Controller
      */
     public function actionView($id)
     {
-        $dataDiklat = $this->getType();
 
         return $this->render('view', [
             'model' => $this->findModel($id),
-            'dataDiklat' => $dataDiklat,
         ]);
     }
 

@@ -19,7 +19,7 @@ class PesertaSearch extends Peserta
     {
         return [
             [['id', 'nip'], 'integer'],
-            [['nama', 'unit_kerja', 'jabatan', 'tmt_jabatan', 'type'], 'safe'],
+            [['nama', 'unit_kerja', 'jabatan', 'tmt_jabatan', 'type', 'pangkat'], 'safe'],
         ];
     }
 

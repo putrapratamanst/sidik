@@ -33,6 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'unit_kerja',
             'jabatan',
             'tmt_jabatan',
+            'pangkat',
             //'type',
 
             ['class' => 'yii\grid\ActionColumn',
