@@ -8,6 +8,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use Yii;
+use yii\web\UploadedFile;
 
 use function PHPSTORM_META\type;
 
@@ -121,7 +122,9 @@ class PesertaController extends Controller
      */
     public function actionView($id)
     {
-
+        if (Yii::$app->user->isGuest) {
+            $this->layout = 'main_user';
+        }
         return $this->render('view', [
             'model' => $this->findModel($id),
         ]);
@@ -224,5 +227,33 @@ class PesertaController extends Controller
             'type' => $type,
             'filter' =>$filter,
         ]); 
+    }
+
+    public function actionFormupload($id)
+    {
+        $this->layout = "main_user";
+        $model = $this->findModel($id);
+        if ($model->sk) {
+            return $this->redirect(['view', 'id' => $model->id]);
+        }
+        return $this->render('_upload', [
+            'model' => $model,
+        ]);
+    }
+
+    public function actionUpload($id)
+    {
+        $model = $this->findModel($id);
+        if (Yii::$app->request->isPost) {
+            $model->sk = UploadedFile::getInstance($model, 'sk');
+    
+            if ($model->validate()) {                
+                $model->sk->saveAs('uploads/' . $model->nip . '.' . $model->sk->extension);
+            }
+
+            $model->sk = $model->nip . '.' . $model->sk->extension;
+            $model->save();
+        }
+        return $this->redirect(['view', 'id' => $model->id]);
     }
 }

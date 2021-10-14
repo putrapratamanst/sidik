@@ -14,7 +14,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <h1><?= Html::encode($this->title) ?></h1>
     <?php
-    if ($type != "struktural" || $type != "fungsional" || $type != "teknis") {
+    if ($type != "struktural" && $type != "fungsional" && $type != "teknis") {
     ?>
         <?= Html::a('<i class="fas fa-angle-double-left"></i>Kembali', ['list', 'type' => "struktural"], ['class' => 'btn btn-success']) ?>
     <?php } ?>
@@ -91,9 +91,23 @@ $this->params['breadcrumbs'][] = $this->title;
                 'unit_kerja',
                 'jabatan',
                 'tmt_jabatan',
-                //'type',
-
-                // ['class' => 'yii\grid\ActionColumn'],
+                [
+                    'class' => 'yii\grid\ActionColumn',
+                    'template' => '{formupload}',
+                    'buttons' => [
+                        'formupload' => function ($url, $model) {
+                            return Html::a('Upload SK', $url, [
+                                'title' => Yii::t('app', 'lead-view'),
+                            ]);
+                        },
+                    ],
+                    'urlCreator' => function ($action, $model, $key, $index) {
+                        if ($action === 'formupload') {
+                            $url = '/peserta/formupload/' . $model->id;
+                            return $url;
+                        }
+                    }
+                ],
             ],
         ]); ?>
     <?php } ?>

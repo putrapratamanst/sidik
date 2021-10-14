@@ -35,6 +35,8 @@ class Peserta extends \yii\db\ActiveRecord
             [['nip'], 'integer'],
             [['tmt_jabatan'], 'safe'],
             [['nama', 'unit_kerja', 'jabatan', 'type'], 'string', 'max' => 255],
+            [['sk'], 'file'],
+
         ];
     }
 
