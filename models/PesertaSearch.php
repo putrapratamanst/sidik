@@ -6,6 +6,7 @@ use yii\base\Model;
 use yii\data\ActiveDataProvider;
 use app\models\Peserta;
 use Codeception\Coverage\Filter;
+use yii\data\ArrayDataProvider;
 
 /**
  * PesertaSearch represents the model behind the search form of `app\models\Peserta`.
@@ -61,22 +62,52 @@ class PesertaSearch extends Peserta
         }
 
         // grid filtering conditions
-        $query->andFilterWhere([
-            'id' => $this->id,
-            'nip' => $this->nip,
-            'tmt_jabatan' => $this->tmt_jabatan,
-        ]);
+        // $query->andFilterWhere([
+        //     'id' => $this->id,
+        //     'nip' => $this->nip,
+        //     'tmt_jabatan' => $this->tmt_jabatan,
+        // ]);
 
         $query->andFilterWhere(['like', 'nama', $this->nama])
             ->andFilterWhere(['like', 'unit_kerja', $this->unit_kerja])
             ->andFilterWhere(['like', 'jabatan', $this->jabatan])
             ->andFilterWhere(['like', 'type', $this->type])
             ->andWhere(['type' => $dataDiklat['type']]);
-        
+
         if ($filter == true) {
             $query->orderBy(['tmt_jabatan' => SORT_ASC]);
+            if ($dataDiklat['type'] == "struktural_pkn") {
+                $query
+                    ->orFilterWhere(['like', 'nip', "198108082009041005"])
+                    ->orFilterWhere(['like', 'nip', "198005162005021001"])
+                    ->orFilterWhere(['like', 'nip', "198409042009041007"])  ;
+            }
         }
 
+        return $dataProvider;
+    }
+
+    public function searchFilter($dataDiklat)
+    {
+        $query = Peserta::find()->where(['type' => $dataDiklat['type']]);
+        if ($dataDiklat['type'] == "struktural_pkn") {
+            $query->limit(8);
+        }
+        if ($dataDiklat['type'] == "struktural_pka") {
+            $query->limit(15);
+        }
+        if ($dataDiklat['type'] == "struktural_pkp") {
+            $query->limit(10);
+        }
+        if ($dataDiklat['type'] == "teknis_camat") {
+            $query->limit(5);
+        }
+        $query = $query->orderBy(['tmt_jabatan' => SORT_ASC])->all();
+        // $query->orderBy(['tmt_jabatan' => SORT_ASC])->all();
+        // add conditions that should always apply here
+
+
+        $dataProvider = new ArrayDataProvider( [ 'allModels' => $query , 'pagination' => [ 'pageSize' => false ] ]);
         return $dataProvider;
     }
 }

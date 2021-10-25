@@ -28,10 +28,10 @@ $this->params['breadcrumbs'][] = $this->title;
                     <a class="btn btn-primary" href="/peserta/list?type=struktural_pkn" role="button"> PKN (Pelatihan Kepemimpinan Nasional)</a>
                 </div>
                 <div class="col-sm">
-                    <button class="btn btn-danger" href="/peserta/list?type=struktural_pka" type="button">PKA (Pelatihan Kepemimpinan Administrasi)</button>
+                    <a class="btn btn-danger" href="/peserta/list?type=struktural_pka" role="button">PKA (Pelatihan Kepemimpinan Administrasi)</a>
                 </div>
                 <div class="col-sm">
-                    <button class="btn btn-secondary" href="/peserta/list?type=struktural_pkp" type="button">PKP (Pelatihan Kepemimpinan Pengawas)</button>
+                    <a class="btn btn-secondary" href="/peserta/list?type=struktural_pkp" role="button">PKP (Pelatihan Kepemimpinan Pengawas)</a>
                 </div>
             </div>
         </div>
@@ -66,10 +66,10 @@ $this->params['breadcrumbs'][] = $this->title;
                     <a class="btn btn-primary" href="/peserta/list?type=teknis_bencana" role="button"> Diklat Darurat Bencana</a>
                 </div>
                 <div class="col-sm">
-                    <button class="btn btn-danger" href="/peserta/list?type=teknis_kebakaran" type="button">Diklat Pemadam Kebakaran</button>
+                    <a class="btn btn-danger" href="/peserta/list?type=teknis_kebakaran" role="button">Diklat Pemadam Kebakaran</a>
                 </div>
                 <div class="col-sm">
-                    <button class="btn btn-secondary" href="/peserta/list?type=teknis_camat" type="button">Diklat Camat</button>
+                    <a class="btn btn-secondary" href="/peserta/list?type=teknis_camat" role="button">Diklat Camat</a>
                 </div>
             </div>
         </div>
@@ -81,7 +81,7 @@ $this->params['breadcrumbs'][] = $this->title;
     ?>
         <?= GridView::widget([
             'dataProvider' => $dataProvider,
-            'filterModel' => $searchModel,
+            // 'filterModel' => $searchModel,
             'columns' => [
                 ['class' => 'yii\grid\SerialColumn'],
 

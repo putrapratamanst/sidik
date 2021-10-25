@@ -97,22 +97,32 @@ class PesertaController extends Controller
      * Lists all Peserta models.
      * @return mixed
      */
-    public function actionFilter()
-    {
-        $dataDiklat = $this->getType();
-        $searchModel = new PesertaSearch();
-        $filter = true;
-        if ($dataDiklat['type'] == "fungsional_kepsek") {
-            $filter = false;
-        }
-        $dataProvider = $searchModel->search($this->request->queryParams, $dataDiklat, $filter);
+    // public function actionFilter($type)
+    // {
+    //     if (Yii::$app->user->isGuest) {
+    //         $this->layout = 'main_user';
+    //     }
+    //     $dataDiklat = $this->getType();
+    //     $searchModel = new PesertaSearch();
+    //     $filter = true;
+    //     if ($dataDiklat['type'] == "fungsional_kepsek") {
+    //         $filter = false;
+    //     }
+    //     if ($dataDiklat['type'] == "teknis_bencana") {
+    //         $filter = false;
+    //     }
+    //     if ($dataDiklat['type'] == "teknis_kebakaran") {
+    //         $filter = false;
+    //     }
 
-        return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
-            'dataDiklat' => $dataDiklat,
-        ]);
-    }
+    //     $dataProvider = $searchModel->search($this->request->queryParams, $dataDiklat, $filter);
+
+    //     return $this->render('list', [
+    //         'searchModel' => $searchModel,
+    //         'dataProvider' => $dataProvider,
+    //         'dataDiklat' => $dataDiklat,
+    //     ]);
+    // }
 
     /**
      * Displays a single Peserta model.
@@ -211,6 +221,18 @@ class PesertaController extends Controller
     public function actionList($type)
     {
         $filter = true;
+        $dataDiklat = $this->getType();
+     
+        if ($dataDiklat['type'] == "fungsional_kepsek") {
+            $filter = false;
+        }
+        if ($dataDiklat['type'] == "teknis_bencana") {
+            $filter = false;
+        }
+        if ($dataDiklat['type'] == "teknis_kebakaran") {
+            $filter = false;
+        }
+
         if ($type == "struktural" || $type == "fungsional" || $type == "teknis") {
             $filter = false;
         }
@@ -218,7 +240,7 @@ class PesertaController extends Controller
         $this->layout = "main_user";
 
         $searchModel = new PesertaSearch();
-        $dataProvider = $searchModel->search($this->request->queryParams, $dataDiklat, false);
+        $dataProvider = $searchModel->searchFilter($dataDiklat);
 
         return $this->render('list', [
             'searchModel' => $searchModel,
