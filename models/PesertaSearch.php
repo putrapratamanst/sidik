@@ -106,7 +106,6 @@ class PesertaSearch extends Peserta
         // $query->orderBy(['tmt_jabatan' => SORT_ASC])->all();
         // add conditions that should always apply here
 
-
         $dataProvider = new ArrayDataProvider( [ 'allModels' => $query , 'pagination' => [ 'pageSize' => false ] ]);
         return $dataProvider;
     }

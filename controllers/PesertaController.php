@@ -9,8 +9,11 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use Yii;
 use yii\web\UploadedFile;
-
+use yii2tech\spreadsheet\Spreadsheet;
+use yii\data\ArrayDataProvider;
 use function PHPSTORM_META\type;
+
+use yii\data\ActiveDataProvider;
 
 /**
  * PesertaController implements the CRUD actions for Peserta model.
@@ -240,7 +243,6 @@ class PesertaController extends Controller
         if ($type == "struktural" || $type == "fungsional" || $type == "teknis") {
             $filter = false;
         }
-        $dataDiklat = $this->getType();
 
         $searchModel = new PesertaSearch();
         $dataProvider = $searchModel->searchFilter($dataDiklat);
@@ -280,5 +282,48 @@ class PesertaController extends Controller
             $model->save();
         }
         return $this->redirect(['view', 'id' => $model->id]);
+    }
+
+    public function actionExport($type)
+    {
+        $query = Peserta::find()->select([
+            'nip','nama','unit_kerja','jabatan','tmt_jabatan','pangkat'
+        ])->where(['type' => $type]);
+        if ($type == "struktural_pkn") {
+           $query =  $query->limit(8);
+        }
+        if ($type == "struktural_pka") {
+            $query = $query->limit(15);
+        }
+        if ($type == "struktural_pkp") {
+            $query = $query->limit(10);
+        }
+        $query = $query->orderBy(['tmt_jabatan' => SORT_ASC])->all();
+
+        $exporter = new Spreadsheet([
+            'dataProvider' => new ArrayDataProvider( [ 'allModels' => $query , 'pagination' => [ 'pageSize' => false ] ]),
+            'columns' => [
+                [
+                    'attribute' => 'nip',
+                ],
+                [
+                    'attribute' => 'nama',
+                ],
+                [
+                    'attribute' => 'unit_kerja',
+                ],
+                [
+                    'attribute' => 'jabatan',
+                ],
+                [
+                    'attribute' => 'tmt_jabatan',
+                ],
+                [
+                    'attribute' => 'pangkat',
+                ],
+            ],
+        ]);
+
+        return $exporter->send('export_'.$type.'.xls');
     }
 }

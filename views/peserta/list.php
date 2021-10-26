@@ -45,7 +45,6 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?php
     if ($type == "fungsional") { ?>
-
         <p>
         <div class="container">
             <div class="row">
@@ -113,6 +112,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 ],
             ]);
         } else {
+            echo Html::a('Download', ['export', 'type' => $dataDiklat['type']], ['class' => 'btn btn-warning']);
+
             echo GridView::widget([
                 'dataProvider' => $dataProvider,
                 // 'filterModel' => $searchModel,
