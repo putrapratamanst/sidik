@@ -220,6 +220,10 @@ class PesertaController extends Controller
 
     public function actionList($type)
     {
+        if (Yii::$app->user->isGuest) {
+            $this->layout = 'main_user';
+        }
+
         $filter = true;
         $dataDiklat = $this->getType();
      
@@ -237,7 +241,6 @@ class PesertaController extends Controller
             $filter = false;
         }
         $dataDiklat = $this->getType();
-        $this->layout = "main_user";
 
         $searchModel = new PesertaSearch();
         $dataProvider = $searchModel->searchFilter($dataDiklat);

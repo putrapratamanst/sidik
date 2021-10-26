@@ -16,7 +16,9 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <p>
         <?= Html::a('Tambah Peserta' , ['create', 'type'=> $dataDiklat['type']], ['class' => 'btn btn-success']) ?>
+        <?php if ($dataDiklat['type'] == "struktural_pkn" || $dataDiklat['type'] == "struktural_pka" || $dataDiklat['type'] == "struktural_pkp"){ ?>
         <?= Html::a('Filter Peserta '. $dataDiklat['diklat'] , ['list', 'type'=> $dataDiklat['type']], ['class' => 'btn btn-danger']) ?>
+        <?php } ?>
     </p>
 
     <!-- echo $this->render('_search', ['model' => $searchModel]); ?> -->
@@ -37,7 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
             //'type',
 
             ['class' => 'yii\grid\ActionColumn',
-            'headerOptions' => ['style' => 'width:8%'],
+            'template' => '{view}',
         ],
         ],
     ]); ?>

@@ -80,39 +80,58 @@ $this->params['breadcrumbs'][] = $this->title;
     }
     ?>
     <?php if ($filter == true) {
-    ?>
-        <?= GridView::widget([
-            'dataProvider' => $dataProvider,
-            // 'filterModel' => $searchModel,
-            'columns' => [
-                ['class' => 'yii\grid\SerialColumn'],
-                
-                // 'id',
-                'nama',
-                'nip',
-                'unit_kerja',
-                'jabatan',
-                'tmt_jabatan',
-                [
-                    'class' => 'yii\grid\ActionColumn',
-                    'template' => '{formupload}',
-                    'buttons' => [
-                        'formupload' => function ($url, $model) {
-                            return Html::a('Upload SK', $url, [
-                                'title' => Yii::t('app', 'lead-view'),
-                            ]);
-                        },
-                    ],
-                    'urlCreator' => function ($action, $model, $key, $index) {
-                        if ($action === 'formupload') {
-                            $url = '/peserta/formupload/' . $model->id;
-                            return $url;
+        if (Yii::$app->user->isGuest) {
+            echo GridView::widget([
+                'dataProvider' => $dataProvider,
+                // 'filterModel' => $searchModel,
+                'columns' => [
+                    ['class' => 'yii\grid\SerialColumn'],
+
+                    // 'id',
+                    'nama',
+                    'nip',
+                    'unit_kerja',
+                    'jabatan',
+                    'tmt_jabatan',
+                    [
+                        'class' => 'yii\grid\ActionColumn',
+                        'template' => '{formupload}',
+                        'buttons' => [
+                            'formupload' => function ($url, $model) {
+                                return Html::a('Upload SK', $url, [
+                                    'title' => Yii::t('app', 'lead-view'),
+                                ]);
+                            },
+                        ],
+                        'urlCreator' => function ($action, $model, $key, $index) {
+                            if ($action === 'formupload') {
+                                $url = '/peserta/formupload/' . $model->id;
+                                return $url;
+                            }
                         }
-                    }
+                    ],
                 ],
-            ],
-        ]); ?>
+            ]);
+        } else {
+            echo GridView::widget([
+                'dataProvider' => $dataProvider,
+                // 'filterModel' => $searchModel,
+                'columns' => [
+                    ['class' => 'yii\grid\SerialColumn'],
+
+                    // 'id',
+                    'nama',
+                    'nip',
+                    'unit_kerja',
+                    'jabatan',
+                    'tmt_jabatan',
+                    [
+                        'class' => 'yii\grid\ActionColumn',
+                        'template' => '{view}',
+                    ],
+                ],
+            ]);
+        }
+    ?>
     <?php } ?>
-
-
 </div>

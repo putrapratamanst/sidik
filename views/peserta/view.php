@@ -48,7 +48,7 @@ $this->params['breadcrumbs'][] = $this->title;
             [
                 'attribute' => 'sk',
                 'format' => 'raw',
-                'value' => Html::a($model->sk, Url::to('@web/uploads/'. $model->sk), ['target'=>'_blank']),
+                'value' => Html::a($model->sk, Url::to('@web/uploads/' . $model->sk), ['target' => '_blank']),
             ],
         ],
     ]) ?>
