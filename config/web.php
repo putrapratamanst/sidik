@@ -26,6 +26,7 @@ $config = [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
+
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
             // send all mails to a file by default. You have to set
@@ -58,13 +59,23 @@ $config = [
             // Disable r= routes
             'enablePrettyUrl' => true,
             'rules' => array(
-              '<controller:\w+>/<id:\d+>' => '<controller>/view',
-              '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
-              '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
+                '<controller:\w+>/<id:\d+>' => '<controller>/view',
+                '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
+                '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
             ),
-          ],
+        ],
     ],
     'params' => $params,
+    // 'modules' => [
+    //     'gridview' =>  [
+    //         'class' => '\kartik\grid\Module'
+    //         // enter optional module parameters below - only if you need to  
+    //         // use your own export download action or custom translation 
+    //         // message source
+    //         // 'downloadAction' => 'gridview/export/download',
+    //         // 'i18n' => []
+    //     ]
+    // ],
 ];
 
 if (YII_ENV_DEV) {

@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <p>
         <?= Html::a('Tambah Peserta' , ['create', 'type'=> $dataDiklat['type']], ['class' => 'btn btn-success']) ?>
-        <?= Html::a('Filter Peserta '. $dataDiklat['diklat'] , ['filter', 'type'=> $dataDiklat['type']], ['class' => 'btn btn-danger']) ?>
+        <?= Html::a('Filter Peserta '. $dataDiklat['diklat'] , ['list', 'type'=> $dataDiklat['type']], ['class' => 'btn btn-danger']) ?>
     </p>
 
     <!-- echo $this->render('_search', ['model' => $searchModel]); ?> -->
