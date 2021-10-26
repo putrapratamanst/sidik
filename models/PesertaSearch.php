@@ -91,18 +91,21 @@ class PesertaSearch extends Peserta
     {
         $query = Peserta::find()->where(['type' => $dataDiklat['type']]);
         if ($dataDiklat['type'] == "struktural_pkn") {
-            $query->limit(8);
+            $query = $query->limit(8)->orderBy(['tmt_jabatan' => SORT_ASC])->all();
         }
         if ($dataDiklat['type'] == "struktural_pka") {
-            $query->limit(15);
+            $query =  $query->limit(15)->orderBy(['tmt_jabatan' => SORT_ASC])->all();
         }
         if ($dataDiklat['type'] == "struktural_pkp") {
-            $query->limit(10);
+            $query = $query->limit(10)->orderBy(['tmt_jabatan' => SORT_ASC])->all();
         }
         if ($dataDiklat['type'] == "teknis_camat") {
-            $query->limit(5);
-        }
-        $query = $query->orderBy(['tmt_jabatan' => SORT_ASC])->all();
+            $query = $query->limit(5)->orderBy(['tmt_jabatan' => SORT_ASC])->all();
+        } 
+        if ($dataDiklat['type'] == "fungsional_kepsek") {
+            $query = $query->all();
+        } 
+
         // $query->orderBy(['tmt_jabatan' => SORT_ASC])->all();
         // add conditions that should always apply here
 

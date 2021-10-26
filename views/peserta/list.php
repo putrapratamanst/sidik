@@ -13,7 +13,6 @@ $this->title = 'Peserta' . " " . $dataDiklat['diklat'];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="peserta-index">
-
     <h1><?= Html::encode($this->title) ?></h1>
     <?php
     if ($type != "struktural" && $type != "fungsional" && $type != "teknis") {
@@ -112,6 +111,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 ],
             ]);
         } else {
+
             echo Html::a('Download', ['export', 'type' => $dataDiklat['type']], ['class' => 'btn btn-warning']);
 
             echo GridView::widget([
@@ -134,5 +134,28 @@ $this->params['breadcrumbs'][] = $this->title;
             ]);
         }
     ?>
-    <?php } ?>
+    <?php }else {
+        
+        echo Html::a('Download', ['export', 'type' => $dataDiklat['type']], ['class' => 'btn btn-warning']);
+
+        echo GridView::widget([
+            'dataProvider' => $dataProvider,
+            // 'filterModel' => $searchModel,
+            'columns' => [
+                ['class' => 'yii\grid\SerialColumn'],
+
+                // 'id',
+                'nama',
+                'nip',
+                'unit_kerja',
+                'jabatan',
+                'tmt_jabatan',
+                [
+                    'class' => 'yii\grid\ActionColumn',
+                    'template' => '{view}',
+                ],
+            ],
+        ]);
+
+    }  ?>
 </div>
