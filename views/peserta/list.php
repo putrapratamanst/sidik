@@ -135,27 +135,28 @@ $this->params['breadcrumbs'][] = $this->title;
         }
     ?>
     <?php }else {
-        
-        echo Html::a('Download', ['export', 'type' => $dataDiklat['type']], ['class' => 'btn btn-warning']);
-
-        echo GridView::widget([
-            'dataProvider' => $dataProvider,
-            // 'filterModel' => $searchModel,
-            'columns' => [
-                ['class' => 'yii\grid\SerialColumn'],
-
-                // 'id',
-                'nama',
-                'nip',
-                'unit_kerja',
-                'jabatan',
-                'tmt_jabatan',
-                [
-                    'class' => 'yii\grid\ActionColumn',
-                    'template' => '{view}',
+        if ($type != "struktural" && $type != "fungsional" && $type != "teknis") {
+            echo Html::a('Download', ['export', 'type' => $dataDiklat['type']], ['class' => 'btn btn-warning']);
+    
+            echo GridView::widget([
+                'dataProvider' => $dataProvider,
+                // 'filterModel' => $searchModel,
+                'columns' => [
+                    ['class' => 'yii\grid\SerialColumn'],
+    
+                    // 'id',
+                    'nama',
+                    'nip',
+                    'unit_kerja',
+                    'jabatan',
+                    'tmt_jabatan',
+                    [
+                        'class' => 'yii\grid\ActionColumn',
+                        'template' => '{view}',
+                    ],
                 ],
-            ],
-        ]);
+            ]);
+        }
 
     }  ?>
 </div>
