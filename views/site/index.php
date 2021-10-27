@@ -95,29 +95,24 @@
 
             <!-- Three columns of text below the carousel -->
             <div class="row">
-                <div class="col-md-2">
-                </div>
-                <div class="col-lg-3">
-                    <a href="/peserta/list?type=struktural">
-                        <img class="rounded-circle" src="<?= Yii::$app->request->baseUrl ?>/image/4.jpeg" alt="Generic placeholder image" width="140" height="140">
-                        <h2>Diklat Struktural</h2>
-                    </a>
+                <div class="col-lg-4">
+                    <img class="rounded-circle" src="<?= Yii::$app->request->baseUrl ?>/image/4.jpeg" alt="Generic placeholder image" width="140" height="140">
+                    <h2>Diklat Struktural</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                    <p><a class="btn btn-secondary" href="/peserta/list?type=struktural" role="button">Selengkapnya »</a></p>
                 </div><!-- /.col-lg-4 -->
-                <div class="col-lg-3">
-                    <a href="/peserta/list?type=fungsional">
-                        <img class="rounded-circle" src="<?= Yii::$app->request->baseUrl ?>/image/5.jpeg" alt="Generic placeholder image" width="140" height="140">
-                        <h2>Diklat Fungsional</h2>
-                    </a>
+                <div class="col-lg-4">
+                    <img class="rounded-circle" src="<?= Yii::$app->request->baseUrl ?>/image/5.jpeg" alt="Generic placeholder image" width="140" height="140">
+                    <h2>Diklat Fungsional</h2>
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                    <p><a class="btn btn-secondary" href="/peserta/list?type=fungsional" role="button">Selengkapnya »</a></p>
                 </div><!-- /.col-lg-4 -->
-                <div class="col-lg-3">
-                    <a href="/peserta/list?type=teknis">
-                        <img class="rounded-circle" src="<?= Yii::$app->request->baseUrl ?>/image/6.jpeg" alt="Generic placeholder image" width="140" height="140">
-                        <h2>Diklat Teknis</h2>
-                    </a>
+                <div class="col-lg-4">
+                    <img class="rounded-circle" src="<?= Yii::$app->request->baseUrl ?>/image/6.jpeg" alt="Generic placeholder image" width="140" height="140">
+                    <h2>Diklat Teknis</h2>
+                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <p><a class="btn btn-secondary" href="/peserta/list?type=teknis" role="button">Selengkapnya »</a></p>
                 </div><!-- /.col-lg-4 -->
-                <div class="col-md-2">
-                </div>
-
             </div><!-- /.row -->
 
             <hr>
