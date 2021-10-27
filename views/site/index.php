@@ -358,6 +358,86 @@
                 </div>
                 <!-- /END THE FEATURETTES -->
 
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">BKPSDM Palas Gelar Ujian Dinas di Hotel</h2>
+                        <p class="lead">
+                        <div class="entry-content entry-content-single" itemprop="text">
+                            <div class="entry-main-single">
+                                <p><strong>PALAS, METRODAILY.id – Badan</strong> Kepegawaian dan Sumber Daya Manusia (BKPSDM) Kabupaten Palas menggelar ujian dinas tingkat I, II dan Ujian Kenaikan Pangkat Penyesuaian Ijazah (UKPPI) di Aula Hotel Al-Marwah Sibuhuan. Ujian ini dilaksanakan selama dua hari berturut, tanggal 6-7 Juli 2021.</p>
+                                <p>Fitri Yani Lubis selaku Kabid Pengembangan Sumber Daya Manusia menyebut, giat ini diikuti 43 peserta, terdiri dari 16 peserta ujian dinas Tk II, 5 peserta ujian dinas Tk I, dan 22 peserta UKPPI.</p>
+                                <p>“Di antara ujian penyesuaian ini, untuk S1 ada 19 orang, dan ujian penyesuaian paket ijazah ada 3 orang,” sebut Fitri.</p>
+                                <p>Acara dihadiri sekaligus dibuka Wakil Bupati Padang Lawas Ahmad Zarnawi Pasaribu. Hadir juga dalam acara itu Asisten III Ali Irfan Hasibuan, Kepala Badan Kepegawaian Negara Kantor Regional 6 Medan Aidu Tauhid, didampingi Tim Penguji antara lain Kabag Tata Usaha Iwan Setyo Prihatin, Kabid Informasi Kepegawaian Jossy Sahat P, Analis Hukum Tuti Hutabalian.</p>
+                                <p>Diketahui, ujian dinas maupun UKPPI ini merupakan salah satu syarat bagi Aparatur Sipil Negara (ASN) yang akan naik pangkat seusai dengan tingkatan masing-masing. Tentu ini adalah salah satu langkah pemerintah kabupaten padang lawas untuk meningkatkan SDM pegawai.</p>
+                                <p>“Saya mengimbau para peserta agar serius dalam mengikuti ujian dinas ini sehingga nantinya bisa lulus dan mendapatkan sertifikat,” kata Wakil Bupati.<strong> (tan)</strong></p>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: auto; height: auto;" src="https://metrodaily.id/wp-content/uploads/2021/07/Uujian-dinas-BKPSDM-Palas-di-hotel.jpg" data-holder-rendered="true">
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">PNS yang mengajukan permohonan Izin Belajar harus melampirkan kelengkapan administrasi sebagai berikut :</h2>
+                        <p class="lead">
+                        <div class="entry-content entry-content-single" itemprop="text">
+                            <p>Waktu pelaksanaan diselenggarakan selama dua hari, mulai tanggal 6 Juli sampai tanggal 7 Juli 2021.</p>
+                            <p>Jumlah Peserta sebanyak 43 orang terdiri dari 16 orang peserta Ujian Dinas Tk. II, 5 orang peserta Ujian Dinas Tk. I, dan 22 orang peserta UKPPI yang terdiri dari Ujian Penyesuaian S1 19 orang, serta Ujian Penyesuaian Paket Ijazah 3 orang. </p>
+                            <p>Acara dibuka oleh Wakil Bupati Palas drg.H.Ahmad Zarnawi Pasaribu , C.Ht, MM, MSi.</p>
+                            <p>Hadir pada acara pembukaan Asisten III, kepala BKPSDM Palas , dan Kepala Badan Kepegawaian Negara Kantor Regional 6 Medan Bapak Aidu Tauhid.</p>
+                            <p>Terlihat juga para Tim Penguji antara lain Kabag Tata Usaha Bapak Iwan Setyo Prihatin, Kabid Informasi Kepegawaian Bapak Jossy Sahat P, Analis Hukum Ibu Tuti Hutabalian.</p>
+                            <p>Wabup Zarnawi dalam arahan dan bimbingannya mengatakan bahwa Ujian Dinas maupun UKPPI ini merupakan salah satu syarat bagi Aparatur Sipil Negara (ASN) yang akan naik pangkat seusai dengan tingkatan masing-masing.</p>
+                            <p>Wakil Bupati menghimbau para peserta agar serius dalam mengikuti Ujian Dinas ini sehingga nantinya bisa lulus dan mendapatkan Sertifikat.</p>
+                            <p>Acara berlangsung dengan tetap mematuhi protokol kesehatan ( Prokes ) Covid – 19. ( MN.02 ).</p>
+                        </div>
+                        </p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="https://mitanews.co.id/wp-content/uploads/2021/07/IMG-20210707-WA0009.jpg" data-holder-rendered="true" style="width: auto; height: auto;">
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">80 Guru SD dan SMP Palas Ikuti Diklat Penilaian Angka Kredit Guru</h2>
+                        <p class="lead">
+                        <div class="td-post-content tagdiv-type">
+                            <!-- image -->
+                            <!-- content -->
+                            <p><strong>PALAS | MIMBARRAKYAT.CO.ID –</strong>Pemerintah Daerah Kabupaten Kabupaten Padanglawas (Palas) melalui Dinas Pendidikan dan Kebudayaan (Disdikbud ) menggelar Diklat penilaian angka kredit guru di lingkungan pemerintah bekerjasama dengan Badan Kepegawaian dan Pengembangan SDM (BKPSDM).</p>
+                            <p>Kegiatan tersebut dibuka secara resmi oleh Wakil Bupati Padanglawas, drg H Ahmad Zarnawi Pasaribu CHt, MM, MSi di Aula Hotel Al Marwah Sibuhuan, Senin (08/03/2021).</p>
+                            <p><img loading="lazy" class="size-medium wp-image-4733 aligncenter td-animation-stack-type0-2" src="https://mimbarrakyat.co.id/wp-content/uploads/2021/03/IMG-20210308-WA0075-300x225.jpg" alt="" width="300" height="225" srcset="https://mimbarrakyat.co.id/wp-content/uploads/2021/03/IMG-20210308-WA0075-300x225.jpg 300w, https://mimbarrakyat.co.id/wp-content/uploads/2021/03/IMG-20210308-WA0075-1024x768.jpg 1024w, https://mimbarrakyat.co.id/wp-content/uploads/2021/03/IMG-20210308-WA0075-768x576.jpg 768w, https://mimbarrakyat.co.id/wp-content/uploads/2021/03/IMG-20210308-WA0075-80x60.jpg 80w, https://mimbarrakyat.co.id/wp-content/uploads/2021/03/IMG-20210308-WA0075-265x198.jpg 265w, https://mimbarrakyat.co.id/wp-content/uploads/2021/03/IMG-20210308-WA0075-696x522.jpg 696w, https://mimbarrakyat.co.id/wp-content/uploads/2021/03/IMG-20210308-WA0075-1068x801.jpg 1068w, https://mimbarrakyat.co.id/wp-content/uploads/2021/03/IMG-20210308-WA0075-560x420.jpg 560w, https://mimbarrakyat.co.id/wp-content/uploads/2021/03/IMG-20210308-WA0075.jpg 1152w" sizes="(max-width: 300px) 100vw, 300px"></p>
+                            <p>Diklat yang menghadirkan narasumber dari Lembaga Penjaminan Mutu Pendidikan (LPMP) Provinsi Sumut itu berlangsung selama 4 hari mulai 08 – 11 Maret 2021 yang&nbsp; diikuti sebanyak 80 peserta&nbsp; guru SD dan SMP.</p>
+                            <p>Dalam sambutannya Wakil Bupati, drg H Ahmad Zarnawi Pasaribu mengatakan kegiatan Diklat penilaian angka kredit guru sangat penting bagi guru menuju profesional. Sehingga mampu membuat peserta didik menjadi nyaman dalam menuntut ilmu.</p>
+                            <p>Kata Wabup, dengan adanya Peraturan Menpan dan RB No.16 Tahun 2009 tentang jabatan fungsional guru dan angka kreditnya. Maka guru harus mengetahui kinerjanya yang dapat dikonversikan menjadi angka kredit, sehingga kenaikan pangkat dapat berjalan lancar.</p>
+                            <p>“Penilaian ini pada dasarnya merupakan upaya peningkatan pelayanan kepangkatan kepada aparatur pemerintah dengan kualifikasi jabatan fungsional guru, “kata Wabup Zarnawi.</p>
+                            <p>Wabup berharap pelaksanaan pelatihan dapat meningkatkan pemahaman dan kemampuan teknis PNS jabatan fungsional dalam kepangkatan dan penilaian angka kredit khususnya bagi tenaga fungsional guru.</p>
+                            <p>Peserta yang mengikuti pendidikan dan pelatihan ini kata Wabup, berharap dapat memberikan ilmunya kepada guru -guru lain yang ada di sekolah masing -masing.</p>
+                            <p>“Saya yakin ke depan tidak ada lagi alasan pangkat guru terhenti pada golongan IV/a karena sesuai dengan Peraturan Menpan dan RB No 16 Tahun 2009 ,”terang Zarnawi.</p>
+                            <p>Guru pada waktu tertentu tidak naik -naik pangkatnya maka guru yang bersangkutan dapat diusulkan untuk diberhentikan dari jabatan fungsional guru dan dipindahkan menjadi pegawai biasa.</p>
+                                    <!-- INLINE RELATED POSTS 1/3 //-->
+                            <p>“Kita harapkan tidak terjadi di lingkungan Pemerintah Kabupaten Padanglawas,” ujarnya seraya berharap agar para peserta dapat mengikuti kegiatan ini dengan sungguh-sungguh dan memahami pentingnya penilaian angka kredit sebagai pedoman dalam penyelenggaraan pelayanan di unit kerja masing -masing.</p>
+                            <p>“Melalui kegiatan pelatihan diharapkan hasilnya adanya kesamaan pemahaman dalam prosedur penyusunan dan kelengkapan penilaian angka kredit secara efektif, efesien, dinamis dan lebih bermakna, “pungkasnya.</p>
+                            <p>Tampak hadir di acara pembukaan Diklat penilaian angka kredit guru, Plt Asisten II, Panguhum Nasution, Kepala Inspektorat, Inspektur Harjusli, Fahri Siregar SSTP, Plt Kadis Pendidikan dan Kebudayaan, Hj Rosidawati Suryani SPd dan Plt Kaban BKPSDM, Adi Putra Hasibuan. (ISN)</p>
+                        </div>
+                        </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="https://mimbarrakyat.co.id/wp-content/uploads/2021/03/IMG-20210308-WA0074.jpg" data-holder-rendered="true" style="width: auto; height: auto;">
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+
             </div><!-- /.container -->
 
             <p>
