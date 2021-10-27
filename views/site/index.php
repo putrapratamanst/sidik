@@ -116,207 +116,254 @@
             </div><!-- /.row -->
 
 
-            <!-- START THE FEATURETTES -->
 
-            <hr class="featurette-divider">
-            <div class="row">
-                <div class="col">
-                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        Permohonan Tugas Belajar
-                    </button>
-                </div>
-                <div class="col">
-                    <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
-                        SYARAT PENGURUSAN DIKLAT PKN (PIM TK.II)
-                    </button>
-                </div>
-                <div class="col">
-                    <button class="btn btn-danger" type="button" data-toggle="collapse" data-target="#collapseExampl3" aria-expanded="false" aria-controls="collapseExample3">
-                        SYARAT PENGURUSAN DIKLAT PKA (PIM TK.III)
-                    </button>
-                </div>
-            </div>
-        <br>
-            <div class="row">
-                <div class="col">
-                    <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
-                        SYARAT PENGURUSAN DIKLAT PKP (PIM TK.IV)
-                    </button>
-                </div>
-                <div class="col">
-                    <button class=" btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
-                        SYARAT PENGURUSAN DIKLAT CAMAT
-                    </button>
-                </div>
-                <div class="col">
-                    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">
-                        SYARAT PENGURUSAN DIKLAT CALON KEPALA SEKOLAH
-                    </button>
-                </div>
-            </div>
 
-            </p>
-            <div class="collapse" id="collapseExample">
-                <div class="card card-body">
+<hr>
 
-                    <div class="row featurette">
-                        <div class="col-md-7">
-                            <h2 class="featurette-heading">PNS yang mengajukan permohonan Tugas Belajar harus melampirkan kelengkapan administrasi sebagai berikut : </h2>
-                            <p class="lead">
-                            <ul>
-                                <li>Surat Pengantar dari Kepala SKPD</li>
-                                <li>Surat Permohonan dari PNS yang Bersangkutan</li>
-                                <li>Foto copy SK Pangkat Terakhir Dilegalisir;</li>
-                                <li>Foto copy SKP 1(satu) tahun terakhir yang dilegalisir;</li>
-                                <li>Foto copy Ijazah dan Transkip nilai terakhir yang dilegalisir;</li>
-                                <li>Surat Keterangan dari Kepala SKPD yang menerangkan bahwa keterkaitan antara pendidikan yang ditempuh dengan tugas yang dijalankan;</li>
-                                <li>Surat Keterangan tidak sedang menjalani hukuman disiplin dari Kepala SKPD;</li>
-                                <li>Surat Keterangan uraian tugas PNS yang bersangkutan dari Kepala SKPD;</li>
-                                <li>Surat Keterangan dari Pimpinan Lembaga Pendidikan bahwa PNS yang bersangkutan lulus ujian masuk;</li>
-                                <li>Foto copy Surat Keterangan Akreditasi Perguruan Tinggi dari Badan Akreditasi Nasional Perguruan Tinggi (BAN-PT) dilegalisir.</li>
-                                <li>Surat Pernyataan Tidak Menuntut Penyesuaian Ijazah kepangkat yang lebihtinggi kecuali formasi mengijinkan.</li>
-                                <li>Surat Pernyataan Bersedia Mengabdi pada Pemerintah Daerah setelah menyelesaikan pendidikan di atas materai.</li>
-                            </ul>
-                            </p>
-                        </div>
-                        <div class="col-md-5">
-                            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: auto; height: auto;" src="<?= Yii::$app->request->baseUrl ?>/image/2.jpeg" data-holder-rendered="true">
-                        </div>
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Permohonan Tugas Belajar
+                            </button>
+                        </h2>
                     </div>
 
-                    <hr class="featurette-divider">
-                </div>
-            </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
 
-            </p>
-            <div class="collapse" id="collapseExample2">
-                <div class="card card-body">
-                    <div class="row featurette">
-                        <div class="col-md-7">
-                            <h2 class="featurette-heading">SYARAT PENGURUSAN DIKLAT PKN (PIM TK.II) :</h2>
-                            <p class="lead">
-                            <ul>
-                                <li>Surat Usulan Dari Pejabat Yang Berwenang/Sekretaris Daerah Kabupaten Kepada Deputi Bidang Diklat Aparatur LAN Melalui Sistem Aplikasi “SIPENDAR”;</li>
-                                <li>Foto Copy SK Pangkat Terakhir Minimal Berpangakat Pembina (IV/a)</li>
-                                <li>Foto copy SK Jabatan Eselon II, Bagi Yang Eselon III Harus Sudah Lulus Ujian Seleksi Calon Peserta Diklat PKN (PIM TK.II);</li>
-                                <li>Batas Usia Minimal Kelahiran 1968. </li>
-                            </ul>
-                            </p>
-                        </div>
-                        <div class="col-md-5">
-                            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="<?= Yii::$app->request->baseUrl ?>/image/5.jpeg" data-holder-rendered="true" style="width: auto; height: auto;">
-                        </div>
-                    </div>
+                            <div class="row featurette">
+                                <div class="col-md-7">
+                                    <h2 class="featurette-heading">PNS yang mengajukan permohonan Tugas Belajar harus melampirkan kelengkapan administrasi sebagai berikut : </h2>
+                                    <p class="lead">
+                                    <ul>
+                                        <li>Surat Pengantar dari Kepala SKPD</li>
+                                        <li>Surat Permohonan dari PNS yang Bersangkutan</li>
+                                        <li>Foto copy SK Pangkat Terakhir Dilegalisir;</li>
+                                        <li>Foto copy SKP 1(satu) tahun terakhir yang dilegalisir;</li>
+                                        <li>Foto copy Ijazah dan Transkip nilai terakhir yang dilegalisir;</li>
+                                        <li>Surat Keterangan dari Kepala SKPD yang menerangkan bahwa keterkaitan antara pendidikan yang ditempuh dengan tugas yang dijalankan;</li>
+                                        <li>Surat Keterangan tidak sedang menjalani hukuman disiplin dari Kepala SKPD;</li>
+                                        <li>Surat Keterangan uraian tugas PNS yang bersangkutan dari Kepala SKPD;</li>
+                                        <li>Surat Keterangan dari Pimpinan Lembaga Pendidikan bahwa PNS yang bersangkutan lulus ujian masuk;</li>
+                                        <li>Foto copy Surat Keterangan Akreditasi Perguruan Tinggi dari Badan Akreditasi Nasional Perguruan Tinggi (BAN-PT) dilegalisir.</li>
+                                        <li>Surat Pernyataan Tidak Menuntut Penyesuaian Ijazah kepangkat yang lebihtinggi kecuali formasi mengijinkan.</li>
+                                        <li>Surat Pernyataan Bersedia Mengabdi pada Pemerintah Daerah setelah menyelesaikan pendidikan di atas materai.</li>
+                                    </ul>
+                                    </p>
+                                </div>
+                                <div class="col-md-5">
+                                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: auto; height: auto;" src="<?= Yii::$app->request->baseUrl ?>/image/2.jpeg" data-holder-rendered="true">
+                                </div>
+                            </div>
 
-                    <hr class="featurette-divider">
-                </div>
-            </div>
-
-            <div class="collapse" id="collapseExample3">
-                <div class="card card-body">
-
-                    <div class="row featurette">
-                        <div class="col-md-7 order-md-2">
-                            <h2 class="featurette-heading">SYARAT PENGURUSAN DIKLAT PKA (PIM TK.III) :</h2>
-                            <p class="lead">
-                            <ul>
-                                <li>Surat Usulan Dari Pejabat Yang Berwenang/Sekeretaris Daerah Kabupaten Kepada Kepala Badan Pengembangan SDM Provinsi Sumatera Utara Melalui Badan Kepegawaian dan Pengembangan SDM Kabupaten Padang Lawas;</li>
-                                <li>Foto Copy SK Pangkat Terakhir Minimal Berpangkat Penata (III/c)</li>
-                                <li>Foto Copy Sertifikat Diklat PIM TK.IV</li>
-                                <li>Foto copy SK Jabatan Eselon III, Bagi Yang Eselon IV Harus Sudah Lulus Ujian Seleksi Calon Peserta Diklat PKA (PIM TK.III);</li>
-                                <li>Batas Usia Minimal Kelahiran 1968. </li>
-                            </ul>
-                            </p>
-                        </div>
-                        <div class="col-md-5 order-md-1">
-                            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="<?= Yii::$app->request->baseUrl ?>/image/4.jpeg" data-holder-rendered="true" style="width: auto; height: auto;">
-                        </div>
-                    </div>
-                    <hr class="featurette-divider">
-                </div>
-            </div>
-
-            <div class="collapse" id="collapseExample4">
-                <div class="card card-body">
-                    <div class="row featurette">
-                        <div class="col-md-7">
-                            <h2 class="featurette-heading">SYARAT PENGURUSAN DIKLAT PKP (PIM TK.IV) :</h2>
-                            <p class="lead">
-                            <ul>
-                                <li>Surat Usulan Dari Pejabat Yang Berwenang/Sekeretaris Daerah Kabupaten Kepada Kepala Badan Pengembangan SDM Provinsi Sumatera Utara Melalui Badan Kepegawaian dan Pengembangan SDM Kabupaten Padang Lawas;</li>
-                                <li>Foto Copy SK Pangkat Terakhir Minimal Berpangkat Penata Muda (III/a)</li>
-                                <li>Foto copy SK Jabatan Eselon IV, Bagi Sudah Fungsional Umum Harus Sudah Lulus Ujian Seleksi Calon Peserta Diklat PIM TK.IV;</li>
-                                <li>Batas Usia Minimal Kelahiran 1968. </li>
-                            </ul>
-                            </p>
-                        </div>
-                        <div class="col-md-5">
-                            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="<?= Yii::$app->request->baseUrl ?>/image/3.jpeg" data-holder-rendered="true" style="width: auto; height: auto;">
-                        </div>
-                    </div>
-
-                    <hr class="featurette-divider">
-                </div>
-            </div>
-
-            <div class="collapse" id="collapseExample5">
-                <div class="card card-body">
-
-                    <div class="row featurette">
-                        <div class="col-md-7 order-md-2">
-                            <h2 class="featurette-heading">SYARAT PENGURUSAN DIKLAT CAMAT :</h2>
-                            <p class="lead">
-                            <ul>
-                                <li>Surat Usulan Dari Pejabat Yang Berwenang/Sekeretaris Daerah Kabupaten Kepada Kepala Badan Pengembangan SDM Kemendagri Melalui Badan Kepegawaian dan Pengembangan SDM Kabupaten Padang Lawas;</li>
-                                <li>Foto Copy SK Pangkat Terakhir Minimal Berpangkat Penata TK.I (III/d)</li>
-                                <li>Foto copy SK Jabatan Eselon III.a (Administrator};</li>
-                                <li>Batas Usia Minimal Kelahiran 1968. </li>
-                            </ul>
-                            </p>
-                        </div>
-                        <div class="col-md-5 order-md-1">
-                            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="<?= Yii::$app->request->baseUrl ?>/image/2.jpeg" data-holder-rendered="true" style="width: auto; height: auto;">
-                        </div>
-                    </div>
-
-                    <hr class="featurette-divider">
-                </div>
-            </div>
-
-            <div class="collapse" id="collapseExample6">
-                <div class="card card-body">
-
-                    <div class="row featurette">
-                        <div class="col-md-7">
-                            <h2 class="featurette-heading">SYARAT PENGURUSAN DIKLAT CALON KEPALA SEKOLAH :</h2>
-                            <p class="lead">
-                            <ul>
-                                <li>Memiliki kualifikasi akademik paling rendah Sarjana (S1) atau Diploma Empat (D- IV) kependidikan atau non kependidikan Perguruan Tinggi yang terakreditasi;</li>
-                                <li>Berusia setinggi – tingginya 54 tahun pada 01 februari 2022;</li>
-                                <li>Memiliki sertifikat pendidik;</li>
-                                <li>Pengalaman mengajar sekurang – kurangnya 5 (lima) tahun menurut jenis dan jenjang Sekolah/Madrasyah masing – masing dan memiliki pengalaman mengajar sekurang – kurangnya 3 (tiga) tahun di Taman Kanak-kanak/Raudhatul Athfal/ Taman Kanak-kanak Luar Biasa (TKA/RA/TKLB); </li>
-                                <li>Memiliki pangkat paling rendah Penata, golongan ruang III/c;</li>
-                                <li>SKP 2 tahun terakhir (2019 dan 2020);</li>
-                                <li>Semua berkas rangkap 2 (dua);</li>
-                            </ul>
-                            </p>
-                        </div>
-                        <div class="col-md-5 ">
-                            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="<?= Yii::$app->request->baseUrl ?>/image/1.jpeg" data-holder-rendered="true" style="width: auto; height: auto;">
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                SYARAT PENGURUSAN DIKLAT PKN (PIM TK.II)
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="row featurette">
+                                <div class="col-md-7">
+                                    <h2 class="featurette-heading">SYARAT PENGURUSAN DIKLAT PKN (PIM TK.II) :</h2>
+                                    <p class="lead">
+                                    <ul>
+                                        <li>Surat Usulan Dari Pejabat Yang Berwenang/Sekretaris Daerah Kabupaten Kepada Deputi Bidang Diklat Aparatur LAN Melalui Sistem Aplikasi “SIPENDAR”;</li>
+                                        <li>Foto Copy SK Pangkat Terakhir Minimal Berpangakat Pembina (IV/a)</li>
+                                        <li>Foto copy SK Jabatan Eselon II, Bagi Yang Eselon III Harus Sudah Lulus Ujian Seleksi Calon Peserta Diklat PKN (PIM TK.II);</li>
+                                        <li>Batas Usia Minimal Kelahiran 1968. </li>
+                                    </ul>
+                                    </p>
+                                </div>
+                                <div class="col-md-5">
+                                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="<?= Yii::$app->request->baseUrl ?>/image/5.jpeg" data-holder-rendered="true" style="width: auto; height: auto;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                SYARAT PENGURUSAN DIKLAT PKP (PIM TK.IV)
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="row featurette">
+                                <div class="col-md-7">
+                                    <h2 class="featurette-heading">SYARAT PENGURUSAN DIKLAT PKP (PIM TK.IV) :</h2>
+                                    <p class="lead">
+                                    <ul>
+                                        <li>Surat Usulan Dari Pejabat Yang Berwenang/Sekeretaris Daerah Kabupaten Kepada Kepala Badan Pengembangan SDM Provinsi Sumatera Utara Melalui Badan Kepegawaian dan Pengembangan SDM Kabupaten Padang Lawas;</li>
+                                        <li>Foto Copy SK Pangkat Terakhir Minimal Berpangkat Penata Muda (III/a)</li>
+                                        <li>Foto copy SK Jabatan Eselon IV, Bagi Sudah Fungsional Umum Harus Sudah Lulus Ujian Seleksi Calon Peserta Diklat PIM TK.IV;</li>
+                                        <li>Batas Usia Minimal Kelahiran 1968. </li>
+                                    </ul>
+                                    </p>
+                                </div>
+                                <div class="col-md-5">
+                                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="<?= Yii::$app->request->baseUrl ?>/image/3.jpeg" data-holder-rendered="true" style="width: auto; height: auto;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                SYARAT PENGURUSAN DIKLAT PKA (PIM TK.III)
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="row featurette">
+                                <div class="col-md-7 order-md-2">
+                                    <h2 class="featurette-heading">SYARAT PENGURUSAN DIKLAT PKA (PIM TK.III) :</h2>
+                                    <p class="lead">
+                                    <ul>
+                                        <li>Surat Usulan Dari Pejabat Yang Berwenang/Sekeretaris Daerah Kabupaten Kepada Kepala Badan Pengembangan SDM Provinsi Sumatera Utara Melalui Badan Kepegawaian dan Pengembangan SDM Kabupaten Padang Lawas;</li>
+                                        <li>Foto Copy SK Pangkat Terakhir Minimal Berpangkat Penata (III/c)</li>
+                                        <li>Foto Copy Sertifikat Diklat PIM TK.IV</li>
+                                        <li>Foto copy SK Jabatan Eselon III, Bagi Yang Eselon IV Harus Sudah Lulus Ujian Seleksi Calon Peserta Diklat PKA (PIM TK.III);</li>
+                                        <li>Batas Usia Minimal Kelahiran 1968. </li>
+                                    </ul>
+                                    </p>
+                                </div>
+                                <div class="col-md-5 order-md-1">
+                                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="<?= Yii::$app->request->baseUrl ?>/image/4.jpeg" data-holder-rendered="true" style="width: auto; height: auto;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                SYARAT PENGURUSAN DIKLAT CAMAT
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="row featurette">
+                                <div class="col-md-7 order-md-2">
+                                    <h2 class="featurette-heading">SYARAT PENGURUSAN DIKLAT CAMAT :</h2>
+                                    <p class="lead">
+                                    <ul>
+                                        <li>Surat Usulan Dari Pejabat Yang Berwenang/Sekeretaris Daerah Kabupaten Kepada Kepala Badan Pengembangan SDM Kemendagri Melalui Badan Kepegawaian dan Pengembangan SDM Kabupaten Padang Lawas;</li>
+                                        <li>Foto Copy SK Pangkat Terakhir Minimal Berpangkat Penata TK.I (III/d)</li>
+                                        <li>Foto copy SK Jabatan Eselon III.a (Administrator};</li>
+                                        <li>Batas Usia Minimal Kelahiran 1968. </li>
+                                    </ul>
+                                    </p>
+                                </div>
+                                <div class="col-md-5 order-md-1">
+                                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="<?= Yii::$app->request->baseUrl ?>/image/2.jpeg" data-holder-rendered="true" style="width: auto; height: auto;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingSix">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                SYARAT PENGURUSAN DIKLAT CALON KEPALA SEKOLAH
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="collapse" id="collapseExample6">
+                                <div class="card card-body">
 
+                                    <div class="row featurette">
+                                        <div class="col-md-7">
+                                            <h2 class="featurette-heading">SYARAT PENGURUSAN DIKLAT CALON KEPALA SEKOLAH :</h2>
+                                            <p class="lead">
+                                            <ul>
+                                                <li>Memiliki kualifikasi akademik paling rendah Sarjana (S1) atau Diploma Empat (D- IV) kependidikan atau non kependidikan Perguruan Tinggi yang terakreditasi;</li>
+                                                <li>Berusia setinggi – tingginya 54 tahun pada 01 februari 2022;</li>
+                                                <li>Memiliki sertifikat pendidik;</li>
+                                                <li>Pengalaman mengajar sekurang – kurangnya 5 (lima) tahun menurut jenis dan jenjang Sekolah/Madrasyah masing – masing dan memiliki pengalaman mengajar sekurang – kurangnya 3 (tiga) tahun di Taman Kanak-kanak/Raudhatul Athfal/ Taman Kanak-kanak Luar Biasa (TKA/RA/TKLB); </li>
+                                                <li>Memiliki pangkat paling rendah Penata, golongan ruang III/c;</li>
+                                                <li>SKP 2 tahun terakhir (2019 dan 2020);</li>
+                                                <li>Semua berkas rangkap 2 (dua);</li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-5 ">
+                                            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="<?= Yii::$app->request->baseUrl ?>/image/1.jpeg" data-holder-rendered="true" style="width: auto; height: auto;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingSeven">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                Permohonan Tugas Belajar
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="collapse" id="collapseExample6">
+                                <div class="card card-body">
 
+                                    <div class="row featurette">
+                                        <div class="col-md-7">
+                                            <h2 class="featurette-heading">PNS yang mengajukan permohonan Tugas Belajar harus melampirkan kelengkapan administrasi sebagai berikut : </h2>
+                                            <p class="lead">
+                                            <ul>
+                                                <li>Surat Pengantar dari Kepala SKPD</li>
+                                                <li>Surat Permohonan dari PNS yang Bersangkutan</li>
+                                                <li>Foto copy SK Pangkat Terakhir Dilegalisir;</li>
+                                                <li>Foto copy SKP 1(satu) tahun terakhir yang dilegalisir;</li>
+                                                <li>Foto copy Ijazah dan Transkip nilai terakhir yang dilegalisir;</li>
+                                                <li>Surat Keterangan dari Kepala SKPD yang menerangkan bahwa keterkaitan antara pendidikan yang ditempuh dengan tugas yang dijalankan;</li>
+                                                <li>Surat Keterangan tidak sedang menjalani hukuman disiplin dari Kepala SKPD;</li>
+                                                <li>Surat Keterangan uraian tugas PNS yang bersangkutan dari Kepala SKPD;</li>
+                                                <li>Surat Keterangan dari Pimpinan Lembaga Pendidikan bahwa PNS yang bersangkutan lulus ujian masuk;</li>
+                                                <li>Foto copy Surat Keterangan Akreditasi Perguruan Tinggi dari Badan Akreditasi Nasional Perguruan Tinggi (BAN-PT) dilegalisir.</li>
+                                                <li>Surat Pernyataan Tidak Menuntut Penyesuaian Ijazah kepangkat yang lebihtinggi kecuali formasi mengijinkan.</li>
+                                                <li>Surat Pernyataan Bersedia Mengabdi pada Pemerintah Daerah setelah menyelesaikan pendidikan di atas materai.</li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: auto; height: auto;" src="<?= Yii::$app->request->baseUrl ?>/image/2.jpeg" data-holder-rendered="true">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
+                        </div>
+                    </div>
+                </div>
+                <!-- /END THE FEATURETTES -->
 
-            <!-- /END THE FEATURETTES -->
+            </div><!-- /.container -->
 
-        </div><!-- /.container -->
-
-        <p>
+            <p>
 
     </main>
 
