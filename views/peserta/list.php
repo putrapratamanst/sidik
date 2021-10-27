@@ -11,13 +11,63 @@ use yii\grid\GridView;
 
 $this->title = 'Peserta' . " " . $dataDiklat['diklat'];
 $this->params['breadcrumbs'][] = $this->title;
+$list = "list";
+$kembali = "";
+
+if (!Yii::$app->user->isGuest) {
+    $list = "index";
+    if ($type == "fungsional_kepsek") {
+        $kembali = "fungsional_kepsek";
+    }
+    if ($type == "struktural_pkn") {
+        $kembali = "struktural_pkn";
+    }
+    if ($type == "struktural_pka") {
+        $kembali = "struktural_pka";
+    }
+    if ($type == "struktural_pkp") {
+        $kembali = "struktural_pkp";
+    }
+    if ($type == "teknis_bencana") {
+        $kembali = "teknis_bencana";
+    }
+    if ($type == "teknis_kebakaran") {
+        $kembali = "teknis_kebakaran";
+    }
+    if ($type == "teknis_camat") {
+        $kembali = "teknis_camat";
+    }
+
+} else {
+    if ($type == "fungsional_kepsek") {
+        $kembali = "fungsional";
+    }
+    if ($type == "struktural_pkn") {
+        $kembali = "struktural";
+    }
+    if ($type == "struktural_pka") {
+        $kembali = "struktural";
+    }
+    if ($type == "struktural_pkp") {
+        $kembali = "struktural";
+    }
+    if ($type == "teknis_bencana") {
+        $kembali = "teknis";
+    }
+    if ($type == "teknis_kebakaran") {
+        $kembali = "teknis";
+    }
+    if ($type == "teknis_camat") {
+        $kembali = "teknis";
+    }
+}
 ?>
 <div class="peserta-index">
     <h1><?= Html::encode($this->title) ?></h1>
     <?php
     if ($type != "struktural" && $type != "fungsional" && $type != "teknis") {
     ?>
-        <?= Html::a('<i class="fas fa-angle-double-left"></i>Kembali', ['list', 'type' => "struktural"], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('<i class="fas fa-angle-double-left"></i>Kembali', [$list, 'type' => $kembali], ['class' => 'btn btn-success']) ?>
     <?php } ?>
     <?php
     if ($type == "struktural") { ?>
@@ -77,8 +127,8 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php
     }
     ?>
-    <?php if ($filter == true) {
-        if (Yii::$app->user->isGuest) {
+    <?php if (Yii::$app->user->isGuest) {
+        if ($type != "teknis" && $type != "struktural" && $type != "fungsional") {
             echo GridView::widget([
                 'dataProvider' => $dataProvider,
                 // 'filterModel' => $searchModel,
@@ -110,8 +160,9 @@ $this->params['breadcrumbs'][] = $this->title;
                     ],
                 ],
             ]);
-        } else {
-
+        }
+    } else {
+        if ($type != "teknis" && $type != "struktural" && $type != "fungsional") {
             echo Html::a('Download', ['export', 'type' => $dataDiklat['type']], ['class' => 'btn btn-warning']);
 
             echo GridView::widget([
@@ -133,30 +184,6 @@ $this->params['breadcrumbs'][] = $this->title;
                 ],
             ]);
         }
+    }
     ?>
-    <?php }else {
-        if ($type != "struktural" && $type != "fungsional" && $type != "teknis") {
-            echo Html::a('Download', ['export', 'type' => $dataDiklat['type']], ['class' => 'btn btn-warning']);
-    
-            echo GridView::widget([
-                'dataProvider' => $dataProvider,
-                // 'filterModel' => $searchModel,
-                'columns' => [
-                    ['class' => 'yii\grid\SerialColumn'],
-    
-                    // 'id',
-                    'nama',
-                    'nip',
-                    'unit_kerja',
-                    'jabatan',
-                    'tmt_jabatan',
-                    [
-                        'class' => 'yii\grid\ActionColumn',
-                        'template' => '{view}',
-                    ],
-                ],
-            ]);
-        }
-
-    }  ?>
 </div>

@@ -105,6 +105,12 @@ class PesertaSearch extends Peserta
         if ($dataDiklat['type'] == "fungsional_kepsek") {
             $query = $query->all();
         } 
+        if ($dataDiklat['type'] == "teknis_bencana") {
+            $query = $query->all();
+        } 
+        if ($dataDiklat['type'] == "teknis_kebakaran") {
+            $query = $query->all();
+        } 
 
         // $query->orderBy(['tmt_jabatan' => SORT_ASC])->all();
         // add conditions that should always apply here
