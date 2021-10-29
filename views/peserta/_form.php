@@ -1,6 +1,7 @@
 <?php
 
 use yii\helpers\Html;
+use yii\helpers\Url;
 use yii\widgets\ActiveForm;
 use yii\jui\DatePicker;
 
@@ -12,25 +13,61 @@ use yii\jui\DatePicker;
 
 <div class="peserta-form">
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php
+    if ($model->isNewRecord) { ?>
 
-    <!-- $form->field($model, 'type')->textInput(['maxlength' => true])->label("Nama Diklat") ?> -->
+        <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'nama')->textInput(['maxlength' => true]) ?>
+        <!-- $form->field($model, 'type')->textInput(['maxlength' => true])->label("Nama Diklat") ?> -->
 
-    <?= $form->field($model, 'nip')->textInput(["type" => 'number']) ?>
+        <?= $form->field($model, 'nama')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'unit_kerja')->textInput(['maxlength' => true]) ?>
+        <?= $form->field($model, 'nip')->textInput(["type" => 'number']) ?>
 
-    <?= $form->field($model, 'pangkat')->textInput(['maxlength' => true]) ?>
+        <?= $form->field($model, 'unit_kerja')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'jabatan')->textInput(['maxlength' => true]) ?>
+        <?= $form->field($model, 'pangkat')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model,'tmt_jabatan')->widget(DatePicker::className(), ['dateFormat' => 'yyyy-MM-dd']) ?>
+        <?= $form->field($model, 'jabatan')->textInput(['maxlength' => true]) ?>
 
-    <div class="form-group">
-        <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
-    </div>
+        <?= $form->field($model, 'tmt_jabatan')->widget(DatePicker::className(), ['dateFormat' => 'yyyy-MM-dd']) ?>
 
-    <?php ActiveForm::end(); ?>
+        <div class="form-group">
+            <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+        </div>
+
+        <?php ActiveForm::end(); ?>
+
+    <?php } else { ?>
+        <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
+
+        <!-- $form->field($model, 'type')->textInput(['maxlength' => true])->label("Nama Diklat") ?> -->
+
+        <?= $form->field($model, 'nama')->textInput(['maxlength' => true]) ?>
+
+        <?= $form->field($model, 'nip')->textInput(["type" => 'number']) ?>
+
+        <?= $form->field($model, 'unit_kerja')->textInput(['maxlength' => true]) ?>
+
+        <?= $form->field($model, 'pangkat')->textInput(['maxlength' => true]) ?>
+
+        <?= $form->field($model, 'jabatan')->textInput(['maxlength' => true]) ?>
+
+        <?= $form->field($model, 'tmt_jabatan')->widget(DatePicker::className(), ['dateFormat' => 'yyyy-MM-dd']) ?>
+
+        <?= $form->field($model, 'sk')->fileInput() ?>
+        <?php 
+        if ($model->sk != "") {
+            echo "File SK saat ini:" . Html::a($model->sk, Url::to('@web/uploads/' . $model->sk), ['target' => '_blank']); 
+        } ?>
+        <br>
+        <br>
+
+        <div class="form-group">
+            <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+        </div>
+
+        <?php ActiveForm::end(); ?>
+    <?php } ?>
+
 </div>

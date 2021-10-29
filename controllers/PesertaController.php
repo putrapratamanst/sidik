@@ -96,7 +96,7 @@ class PesertaController extends Controller
         ]);
     }
 
-        /**
+    /**
      * Lists all Peserta models.
      * @return mixed
      */
@@ -179,9 +179,23 @@ class PesertaController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+        $sk = $model->sk;
         $dataDiklat = $this->getType();
+        if ($this->request->isPost && $model->load($this->request->post())) {
 
-        if ($this->request->isPost && $model->load($this->request->post()) && $model->save()) {
+            $model->sk = UploadedFile::getInstance($model, 'sk');
+            if ($model->sk != null) {
+
+                if ($model->validate()) {
+                    $model->sk->saveAs('uploads/' . $model->nip . '.' . $model->sk->extension);
+                }
+
+                $model->sk = $model->nip . '.' . $model->sk->extension;
+            } else {
+                $model->sk = $sk;
+            }
+
+            $model->save();
             return $this->redirect(['view', 'id' => $model->id, 'type' => $dataDiklat['type']]);
         }
 
@@ -229,7 +243,7 @@ class PesertaController extends Controller
 
         $filter = true;
         $dataDiklat = $this->getType();
-     
+
         if ($dataDiklat['type'] == "fungsional_kepsek") {
             $filter = false;
         }
@@ -252,8 +266,8 @@ class PesertaController extends Controller
             'dataProvider' => $dataProvider,
             'dataDiklat' => $dataDiklat,
             'type' => $type,
-            'filter' =>$filter,
-        ]); 
+            'filter' => $filter,
+        ]);
     }
 
     public function actionFormupload($id)
@@ -273,8 +287,8 @@ class PesertaController extends Controller
         $model = $this->findModel($id);
         if (Yii::$app->request->isPost) {
             $model->sk = UploadedFile::getInstance($model, 'sk');
-    
-            if ($model->validate()) {                
+
+            if ($model->validate()) {
                 $model->sk->saveAs('uploads/' . $model->nip . '.' . $model->sk->extension);
             }
 
@@ -287,10 +301,10 @@ class PesertaController extends Controller
     public function actionExport($type)
     {
         $query = Peserta::find()->select([
-            'nip','nama','unit_kerja','jabatan','tmt_jabatan','pangkat'
+            'nip', 'nama', 'unit_kerja', 'jabatan', 'tmt_jabatan', 'pangkat'
         ])->where(['type' => $type]);
         if ($type == "struktural_pkn") {
-           $query =  $query->limit(8);
+            $query =  $query->limit(8);
         }
         if ($type == "struktural_pka") {
             $query = $query->limit(15);
@@ -301,7 +315,7 @@ class PesertaController extends Controller
         $query = $query->orderBy(['tmt_jabatan' => SORT_ASC])->all();
 
         $exporter = new Spreadsheet([
-            'dataProvider' => new ArrayDataProvider( [ 'allModels' => $query , 'pagination' => [ 'pageSize' => false ] ]),
+            'dataProvider' => new ArrayDataProvider(['allModels' => $query, 'pagination' => ['pageSize' => false]]),
             'columns' => [
                 [
                     'attribute' => 'nip',
@@ -324,6 +338,6 @@ class PesertaController extends Controller
             ],
         ]);
 
-        return $exporter->send('export_'.$type.'.xls');
+        return $exporter->send('export_' . $type . '.xls');
     }
 }
