@@ -285,74 +285,25 @@
                     </div>
                     <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
                         <div class="card-body">
-                            <div class="collapse" id="collapseExample6">
-                                <div class="card card-body">
-
-                                    <div class="row featurette">
-                                        <div class="col-md-7">
-                                            <h2 class="featurette-heading">SYARAT PENGURUSAN DIKLAT CALON KEPALA SEKOLAH :</h2>
-                                            <p class="lead">
-                                            <ul>
-                                                <li>Memiliki kualifikasi akademik paling rendah Sarjana (S1) atau Diploma Empat (D- IV) kependidikan atau non kependidikan Perguruan Tinggi yang terakreditasi;</li>
-                                                <li>Berusia setinggi – tingginya 54 tahun pada 01 februari 2022;</li>
-                                                <li>Memiliki sertifikat pendidik;</li>
-                                                <li>Pengalaman mengajar sekurang – kurangnya 5 (lima) tahun menurut jenis dan jenjang Sekolah/Madrasyah masing – masing dan memiliki pengalaman mengajar sekurang – kurangnya 3 (tiga) tahun di Taman Kanak-kanak/Raudhatul Athfal/ Taman Kanak-kanak Luar Biasa (TKA/RA/TKLB); </li>
-                                                <li>Memiliki pangkat paling rendah Penata, golongan ruang III/c;</li>
-                                                <li>SKP 2 tahun terakhir (2019 dan 2020);</li>
-                                                <li>Semua berkas rangkap 2 (dua);</li>
-                                            </ul>
-                                            </p>
-                                        </div>
-                                        <div class="col-md-5 ">
-                                            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="<?= Yii::$app->request->baseUrl ?>/image/1.jpeg" data-holder-rendered="true" style="width: auto; height: auto;">
-                                        </div>
-                                    </div>
+                            <div class="row featurette">
+                                <div class="col-md-7">
+                                    <h2 class="featurette-heading">SYARAT PENGURUSAN DIKLAT CALON KEPALA SEKOLAH :</h2>
+                                    <p class="lead">
+                                    <ul>
+                                        <li>Memiliki kualifikasi akademik paling rendah Sarjana (S1) atau Diploma Empat (D- IV) kependidikan atau non kependidikan Perguruan Tinggi yang terakreditasi;</li>
+                                        <li>Berusia setinggi – tingginya 54 tahun pada 01 februari 2022;</li>
+                                        <li>Memiliki sertifikat pendidik;</li>
+                                        <li>Pengalaman mengajar sekurang – kurangnya 5 (lima) tahun menurut jenis dan jenjang Sekolah/Madrasyah masing – masing dan memiliki pengalaman mengajar sekurang – kurangnya 3 (tiga) tahun di Taman Kanak-kanak/Raudhatul Athfal/ Taman Kanak-kanak Luar Biasa (TKA/RA/TKLB); </li>
+                                        <li>Memiliki pangkat paling rendah Penata, golongan ruang III/c;</li>
+                                        <li>SKP 2 tahun terakhir (2019 dan 2020);</li>
+                                        <li>Semua berkas rangkap 2 (dua);</li>
+                                    </ul>
+                                    </p>
+                                </div>
+                                <div class="col-md-5 ">
+                                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="<?= Yii::$app->request->baseUrl ?>/image/1.jpeg" data-holder-rendered="true" style="width: auto; height: auto;">
                                 </div>
                             </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingSeven">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                Permohonan Tugas Belajar
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
-                        <div class="card-body">
-                            <div class="collapse" id="collapseExample6">
-                                <div class="card card-body">
-
-                                    <div class="row featurette">
-                                        <div class="col-md-7">
-                                            <h2 class="featurette-heading">PNS yang mengajukan permohonan Tugas Belajar harus melampirkan kelengkapan administrasi sebagai berikut : </h2>
-                                            <p class="lead">
-                                            <ul>
-                                                <li>Surat Pengantar dari Kepala SKPD</li>
-                                                <li>Surat Permohonan dari PNS yang Bersangkutan</li>
-                                                <li>Foto copy SK Pangkat Terakhir Dilegalisir;</li>
-                                                <li>Foto copy SKP 1(satu) tahun terakhir yang dilegalisir;</li>
-                                                <li>Foto copy Ijazah dan Transkip nilai terakhir yang dilegalisir;</li>
-                                                <li>Surat Keterangan dari Kepala SKPD yang menerangkan bahwa keterkaitan antara pendidikan yang ditempuh dengan tugas yang dijalankan;</li>
-                                                <li>Surat Keterangan tidak sedang menjalani hukuman disiplin dari Kepala SKPD;</li>
-                                                <li>Surat Keterangan uraian tugas PNS yang bersangkutan dari Kepala SKPD;</li>
-                                                <li>Surat Keterangan dari Pimpinan Lembaga Pendidikan bahwa PNS yang bersangkutan lulus ujian masuk;</li>
-                                                <li>Foto copy Surat Keterangan Akreditasi Perguruan Tinggi dari Badan Akreditasi Nasional Perguruan Tinggi (BAN-PT) dilegalisir.</li>
-                                                <li>Surat Pernyataan Tidak Menuntut Penyesuaian Ijazah kepangkat yang lebihtinggi kecuali formasi mengijinkan.</li>
-                                                <li>Surat Pernyataan Bersedia Mengabdi pada Pemerintah Daerah setelah menyelesaikan pendidikan di atas materai.</li>
-                                            </ul>
-                                            </p>
-                                        </div>
-                                        <div class="col-md-5">
-                                            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: auto; height: auto;" src="<?= Yii::$app->request->baseUrl ?>/image/2.jpeg" data-holder-rendered="true">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
                 </div>
@@ -385,7 +336,7 @@
 
                 <div class="row featurette">
                     <div class="col-md-7 order-md-2">
-                        <h2 class="featurette-heading">PNS yang mengajukan permohonan Izin Belajar harus melampirkan kelengkapan administrasi sebagai berikut :</h2>
+                        <h2 class="featurette-heading">BKPSDM Palas Gelar Ujian Dinas dan UKPPI :</h2>
                         <p class="lead">
                         <div class="entry-content entry-content-single" itemprop="text">
                             <p>Waktu pelaksanaan diselenggarakan selama dua hari, mulai tanggal 6 Juli sampai tanggal 7 Juli 2021.</p>
@@ -424,7 +375,7 @@
                             <p>Peserta yang mengikuti pendidikan dan pelatihan ini kata Wabup, berharap dapat memberikan ilmunya kepada guru -guru lain yang ada di sekolah masing -masing.</p>
                             <p>“Saya yakin ke depan tidak ada lagi alasan pangkat guru terhenti pada golongan IV/a karena sesuai dengan Peraturan Menpan dan RB No 16 Tahun 2009 ,”terang Zarnawi.</p>
                             <p>Guru pada waktu tertentu tidak naik -naik pangkatnya maka guru yang bersangkutan dapat diusulkan untuk diberhentikan dari jabatan fungsional guru dan dipindahkan menjadi pegawai biasa.</p>
-                                    <!-- INLINE RELATED POSTS 1/3 //-->
+                            <!-- INLINE RELATED POSTS 1/3 //-->
                             <p>“Kita harapkan tidak terjadi di lingkungan Pemerintah Kabupaten Padanglawas,” ujarnya seraya berharap agar para peserta dapat mengikuti kegiatan ini dengan sungguh-sungguh dan memahami pentingnya penilaian angka kredit sebagai pedoman dalam penyelenggaraan pelayanan di unit kerja masing -masing.</p>
                             <p>“Melalui kegiatan pelatihan diharapkan hasilnya adanya kesamaan pemahaman dalam prosedur penyusunan dan kelengkapan penilaian angka kredit secara efektif, efesien, dinamis dan lebih bermakna, “pungkasnya.</p>
                             <p>Tampak hadir di acara pembukaan Diklat penilaian angka kredit guru, Plt Asisten II, Panguhum Nasution, Kepala Inspektorat, Inspektur Harjusli, Fahri Siregar SSTP, Plt Kadis Pendidikan dan Kebudayaan, Hj Rosidawati Suryani SPd dan Plt Kaban BKPSDM, Adi Putra Hasibuan. (ISN)</p>
