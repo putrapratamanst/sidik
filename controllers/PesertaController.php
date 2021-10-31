@@ -138,6 +138,7 @@ class PesertaController extends Controller
         if (Yii::$app->user->isGuest) {
             $this->layout = 'main_user';
         }
+        
         return $this->render('view', [
             'model' => $this->findModel($id),
         ]);
@@ -178,6 +179,10 @@ class PesertaController extends Controller
      */
     public function actionUpdate($id)
     {
+        if (Yii::$app->user->isGuest) {
+            $this->layout = 'main_user';
+        }
+
         $model = $this->findModel($id);
         $sk = $model->sk;
         $dataDiklat = $this->getType();

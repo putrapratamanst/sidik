@@ -23,16 +23,8 @@ $this->params['breadcrumbs'][] = $this->title;
         <?php } else { ?>
             <?= Html::a('Kembali', ['list', 'type' => $model->type], ['class' => 'btn btn-success']) ?>
         <?php } ?>
-        <?php if (!Yii::$app->user->isGuest) { ?>
             <?= Html::a('Update', ['update', 'id' => $model->id, 'type' => $model->type], ['class' => 'btn btn-primary']) ?>
-            <?= Html::a('Delete', ['delete', 'id' => $model->id], [
-                'class' => 'btn btn-danger',
-                'data' => [
-                    'confirm' => 'Are you sure you want to delete this item?',
-                    'method' => 'post',
-                ],
-            ]) ?>
-        <?php } ?>
+
     </p>
 
     <?= DetailView::widget([
