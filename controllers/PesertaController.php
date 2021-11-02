@@ -49,7 +49,7 @@ class PesertaController extends Controller
                 $diklat = "PKN (Pelatihan Kepemimpinan Nasional)";
                 break;
             case 'struktural_pka':
-                $diklat = "PKA (Pelatihan Kepemimpinan Administrasi)";
+                $diklat = "PKA (Pelatihan Kepemimpinan Administrator)";
                 break;
             case 'struktural_pkp':
                 $diklat = "PKP (Pelatihan Kepemimpinan Pengawas)";
@@ -84,6 +84,10 @@ class PesertaController extends Controller
      */
     public function actionIndex()
     {
+        if (Yii::$app->user->isGuest) {
+            $this->layout = 'main_user';
+        }
+
         $dataDiklat = $this->getType();
 
         $searchModel = new PesertaSearch();
@@ -138,7 +142,7 @@ class PesertaController extends Controller
         if (Yii::$app->user->isGuest) {
             $this->layout = 'main_user';
         }
-        
+
         return $this->render('view', [
             'model' => $this->findModel($id),
         ]);
@@ -324,21 +328,129 @@ class PesertaController extends Controller
             'columns' => [
                 [
                     'attribute' => 'nip',
+                    'dimensionOptions' => [
+                        'autoSize' => true
+                    ],
+                    'headerOptions' => [
+                        'borders' => [
+                            'allBorders' => [
+                                'borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_MEDIUM,
+                            ],
+                        ],
+                    ],
+                    'contentOptions' => [
+                        'borders' => [
+                            'allBorders' => [
+                                'borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_MEDIUM,
+                            ],
+                        ],
+                        'format' => 'number'
+                    ],
+
+
                 ],
                 [
                     'attribute' => 'nama',
+                    'dimensionOptions' => [
+                        'autoSize' => true
+                    ],
+                    'headerOptions' => [
+                        'borders' => [
+                            'allBorders' => [
+                                'borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_MEDIUM,
+                            ],
+                        ],
+                    ],
+                    'contentOptions' => [
+                        'borders' => [
+                            'allBorders' => [
+                                'borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_MEDIUM,
+                            ],
+                        ],
+                    ],
                 ],
                 [
                     'attribute' => 'unit_kerja',
+                    'dimensionOptions' => [
+                        'autoSize' => true
+                    ],
+                    'headerOptions' => [
+                        'borders' => [
+                            'allBorders' => [
+                                'borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_MEDIUM,
+                            ],
+                        ],
+                    ],
+                    'contentOptions' => [
+                        'borders' => [
+                            'allBorders' => [
+                                'borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_MEDIUM,
+                            ],
+                        ],
+                    ],
+
                 ],
                 [
                     'attribute' => 'jabatan',
+                    'dimensionOptions' => [
+                        'autoSize' => true
+                    ],
+                    'headerOptions' => [
+                        'borders' => [
+                            'allBorders' => [
+                                'borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_MEDIUM,
+                            ],
+                        ],
+                    ],
+                    'contentOptions' => [
+                        'borders' => [
+                            'allBorders' => [
+                                'borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_MEDIUM,
+                            ],
+                        ],
+                    ],
+
                 ],
                 [
                     'attribute' => 'tmt_jabatan',
+                    'dimensionOptions' => [
+                        'autoSize' => true
+                    ],
+                    'headerOptions' => [
+                        'borders' => [
+                            'allBorders' => [
+                                'borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_MEDIUM,
+                            ],
+                        ],
+                    ],
+                    'contentOptions' => [
+                        'borders' => [
+                            'allBorders' => [
+                                'borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_MEDIUM,
+                            ],
+                        ],
+                    ],
+
                 ],
                 [
                     'attribute' => 'pangkat',
+                    'dimensionOptions' => [
+                        'autoSize' => true
+                    ],
+                    'headerOptions' => [
+                        'borders' => [
+                            'allBorders' => [
+                                'borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_MEDIUM,
+                            ],
+                        ],
+                    ],
+                    'contentOptions' => [
+                        'borders' => [
+                            'allBorders' => [
+                                'borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_MEDIUM,
+                            ],
+                        ],
+                    ],
                 ],
             ],
         ]);

@@ -96,7 +96,7 @@
                 <div class="carousel-item">
                     <img class="d-block w-100" src="<?= Yii::$app->request->baseUrl ?>/image/9.jpeg" alt="Sixth slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>  Fasilitasi Diklat PKP dan PKA</h5>
+                        <h5> Fasilitasi Diklat PKP dan PKA</h5>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -150,7 +150,7 @@
                     <div class="card-header" id="headingOne">
                         <h2 class="mb-0">
                             <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Permohonan Tugas Belajar
+                                PERMOHONAN TUGAS BELAJAR
                             </button>
                         </h2>
                     </div>
@@ -325,6 +325,48 @@
                                         <li>Memiliki pangkat paling rendah Penata, golongan ruang III/c;</li>
                                         <li>SKP 2 tahun terakhir (2019 dan 2020);</li>
                                         <li>Semua berkas rangkap 2 (dua);</li>
+                                    </ul>
+                                    </p>
+                                </div>
+                                <div class="col-md-5 ">
+                                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="<?= Yii::$app->request->baseUrl ?>/image/1.jpeg" data-holder-rendered="true" style="width: auto; height: auto;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingSeven">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                SYARAT PENGAJUAN IZIN BELAJAR
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="row featurette">
+                                <div class="col-md-7">
+                                    <h2 class="featurette-heading">SYARAT PENGURUSAN DIKLAT CALON KEPALA SEKOLAH :</h2>
+                                    <p class="lead">
+                                    <ul>
+                                        <li>Surat Pengantar dari Kepala SKPD </li>
+                                        <li>Surat Permohonan dari PNS yang bersangkutan</li>
+                                        <li>Foto copy SK Pangkat Terakhir Dilegalisir;</li>
+                                        <li>Surat Keterangan dari Kepala SKPD yang menerangkan bahwa keterkaitan pendidikan yang ditempuh dengan  kedinasan dijalankan.</li>
+                                        <li>Surat Keterangan dari Kepala SKPD yang menerangkan bahwa kegiatan Pendidikan di luar jam kerja dan tidak mengganggu pelaksanaan tugas.</li>
+                                        <li>Surat Keterangan Tidak Sedang Menjalani Hukuman Disiplin dari Kepala SKPD;</li>
+                                        <li>Surat Keterangan uraian tugas PNS yang bersangkutan dari Kepala SKPD;</li>
+                                        <li>Surat Keterangan dari Pimpinan Lembaga Pendidikan bahwa yang bersangkutan lulus ujian masuk;</li>
+                                        <li>Jadwal pelajaran/kuliah yang ditandangani oleh Pimpinan Lembaga Pendidikan;</li>
+                                        <li>Foto copy Surat Keterangan Akreditasi Perguruan Tinggi dari Badan Akreditasi Nasional Perguruan Tinggi (BAN-PT) dilegalisir;</li>
+                                        <li>Surat Pernyataan di atas materai untuk :</li>
+                                        <ul>
+                                            <li>Bersedia menanggung sendiri biaya perkuliahan</li>
+                                            <li>Tidak mengganggu pelaksanaan tugas kedinasan</li>
+                                            <li>Tidak menuntuk kenaikan pangkat penyesuaian ijazah, kecuali formasi mengizinkan.</li>
+                                        </ul>
+                                        <li>Asli lembar hasil konsultasi yang dikeluarkan oleh Pejabat yang menangani Izin Belajar Belajar.</li>
                                     </ul>
                                     </p>
                                 </div>

@@ -21,7 +21,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
             <?= Html::a('Kembali', ['index', 'type' => $model->type], ['class' => 'btn btn-success']) ?>
         <?php } else { ?>
-            <?= Html::a('Kembali', ['list', 'type' => $model->type], ['class' => 'btn btn-success']) ?>
+            <?= Html::a('Kembali', ['index', 'type' => $model->type], ['class' => 'btn btn-success']) ?>
         <?php } ?>
             <?= Html::a('Update', ['update', 'id' => $model->id, 'type' => $model->type], ['class' => 'btn btn-primary']) ?>
 

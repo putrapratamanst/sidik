@@ -41,6 +41,7 @@ if (!Yii::$app->user->isGuest) {
     }
 
 } else {
+    
     if ($type == "fungsional_kepsek") {
         $kembali = "fungsional";
     }
@@ -78,13 +79,13 @@ if (!Yii::$app->user->isGuest) {
         <div class="container">
             <div class="row">
                 <div class="col-sm">
-                    <a class="btn btn-primary" href="/peserta/list?type=struktural_pkn" role="button"> PKN (Pelatihan Kepemimpinan Nasional)</a>
+                    <a class="btn btn-primary" href="/peserta/index?type=struktural_pkn" role="button"> PKN (Pelatihan Kepemimpinan Nasional)</a>
                 </div>
                 <div class="col-sm">
-                    <a class="btn btn-danger" href="/peserta/list?type=struktural_pka" role="button">PKA (Pelatihan Kepemimpinan Administrasi)</a>
+                    <a class="btn btn-danger" href="/peserta/index?type=struktural_pka" role="button">PKA (Pelatihan Kepemimpinan Administrator)</a>
                 </div>
                 <div class="col-sm">
-                    <a class="btn btn-secondary" href="/peserta/list?type=struktural_pkp" role="button">PKP (Pelatihan Kepemimpinan Pengawas)</a>
+                    <a class="btn btn-secondary" href="/peserta/index?type=struktural_pkp" role="button">PKP (Pelatihan Kepemimpinan Pengawas)</a>
                 </div>
             </div>
         </div>
@@ -100,7 +101,7 @@ if (!Yii::$app->user->isGuest) {
         <div class="container">
             <div class="row">
                 <div class="col-sm">
-                    <a class="btn btn-primary" href="/peserta/list?type=fungsional_kepsek" role="button"> Diklat Calon Kepala Sekolah</a>
+                    <a class="btn btn-primary" href="/peserta/index?type=fungsional_kepsek" role="button"> Diklat Calon Kepala Sekolah</a>
                 </div>
             </div>
         </div>
@@ -115,13 +116,13 @@ if (!Yii::$app->user->isGuest) {
         <div class="container">
             <div class="row">
                 <div class="col-sm">
-                    <a class="btn btn-primary" href="/peserta/list?type=teknis_bencana" role="button"> Diklat Darurat Bencana</a>
+                    <a class="btn btn-primary" href="/peserta/index?type=teknis_bencana" role="button"> Diklat Darurat Bencana</a>
                 </div>
                 <div class="col-sm">
-                    <a class="btn btn-danger" href="/peserta/list?type=teknis_kebakaran" role="button">Diklat Pemadam Kebakaran</a>
+                    <a class="btn btn-danger" href="/peserta/index?type=teknis_kebakaran" role="button">Diklat Pemadam Kebakaran</a>
                 </div>
                 <div class="col-sm">
-                    <a class="btn btn-secondary" href="/peserta/list?type=teknis_camat" role="button">Diklat Camat</a>
+                    <a class="btn btn-secondary" href="/peserta/index?type=teknis_camat" role="button">Diklat Camat</a>
                 </div>
             </div>
         </div>

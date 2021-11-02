@@ -45,7 +45,7 @@ AppAsset::register($this);
                     'label' => 'Diklat Struktural',
                     'items' => [
                         ['label' => 'PKN (Pelatihan Kepemimpinan Nasional)', 'url' => '/peserta/index?type=struktural_pkn'],
-                        ['label' => 'PKA (Pelatihan Kepemimpinan Administrasi)', 'url' => '/peserta/index?type=struktural_pka'],
+                        ['label' => 'PKA (Pelatihan Kepemimpinan Administrator)', 'url' => '/peserta/index?type=struktural_pka'],
                         ['label' => 'PKP (Pelatihan Kepemimpinan Pengawas)', 'url' => '/peserta/index?type=struktural_pkp'],
                     ],
                 ],
