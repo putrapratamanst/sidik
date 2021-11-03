@@ -38,7 +38,15 @@ $this->params['breadcrumbs'][] = $this->title;
             'nip',
             'unit_kerja',
             'jabatan',
-            'tmt_jabatan',
+            [
+                'attribute' => 'tmt_jabatan',
+
+                'value' => function ($model) {
+
+                    return Yii::$app->formatter->asDateTime($model->tmt_jabatan, 'php:d-m-Y');
+                },
+
+            ],
             'pangkat',
             //'type',
 
@@ -59,8 +67,16 @@ $this->params['breadcrumbs'][] = $this->title;
                     'nip',
                     'unit_kerja',
                     'jabatan',
-                    'tmt_jabatan',
                     [
+                        'attribute' => 'tmt_jabatan',
+        
+                        'value' => function ($model) {
+        
+                            return Yii::$app->formatter->asDateTime($model->tmt_jabatan, 'php:d-m-Y');
+                        },
+        
+                    ],
+                            [
                         'class' => 'yii\grid\ActionColumn',
                         'template' => '{formupload}',
                         'buttons' => [

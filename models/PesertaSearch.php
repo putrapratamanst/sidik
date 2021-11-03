@@ -80,7 +80,7 @@ class PesertaSearch extends Peserta
                 $query
                     ->orFilterWhere(['like', 'nip', "198108082009041005"])
                     ->orFilterWhere(['like', 'nip', "198005162005021001"])
-                    ->orFilterWhere(['like', 'nip', "198409042009041007"])  ;
+                    ->orFilterWhere(['like', 'nip', "198409042009041007"]);
             }
         }
 
@@ -92,6 +92,18 @@ class PesertaSearch extends Peserta
         $query = Peserta::find()->where(['type' => $dataDiklat['type']]);
         if ($dataDiklat['type'] == "struktural_pkn") {
             $query = $query->limit(8)->orderBy(['tmt_jabatan' => SORT_ASC])->all();
+
+            $dataInject = Peserta::find()->where(['type' => $dataDiklat['type']])->where(['nip' => 198108082009041005])->all();
+            array_push($query, $dataInject[0]);
+
+            $new = [];
+            foreach ($query as $key => $value) {
+                if ($value->getAttributes()['nip'] == 197704082011011002) {
+                    continue;
+                }
+                array_push($new, $value);
+            }
+            $query = $new;
         }
         if ($dataDiklat['type'] == "struktural_pka") {
             $query =  $query->limit(15)->orderBy(['tmt_jabatan' => SORT_ASC])->all();
@@ -101,21 +113,21 @@ class PesertaSearch extends Peserta
         }
         if ($dataDiklat['type'] == "teknis_camat") {
             $query = $query->limit(5)->orderBy(['tmt_jabatan' => SORT_ASC])->all();
-        } 
+        }
         if ($dataDiklat['type'] == "fungsional_kepsek") {
             $query = $query->all();
-        } 
+        }
         if ($dataDiklat['type'] == "teknis_bencana") {
             $query = $query->all();
-        } 
+        }
         if ($dataDiklat['type'] == "teknis_kebakaran") {
             $query = $query->all();
-        } 
+        }
 
         // $query->orderBy(['tmt_jabatan' => SORT_ASC])->all();
         // add conditions that should always apply here
 
-        $dataProvider = new ArrayDataProvider( [ 'allModels' => $query , 'pagination' => [ 'pageSize' => false ] ]);
+        $dataProvider = new ArrayDataProvider(['allModels' => $query, 'pagination' => ['pageSize' => false]]);
         return $dataProvider;
     }
 }

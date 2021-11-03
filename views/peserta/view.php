@@ -23,7 +23,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <?php } else { ?>
             <?= Html::a('Kembali', ['index', 'type' => $model->type], ['class' => 'btn btn-success']) ?>
         <?php } ?>
-            <?= Html::a('Update', ['update', 'id' => $model->id, 'type' => $model->type], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('Update', ['update', 'id' => $model->id, 'type' => $model->type], ['class' => 'btn btn-primary']) ?>
 
     </p>
 
@@ -36,7 +36,15 @@ $this->params['breadcrumbs'][] = $this->title;
             'unit_kerja',
             'jabatan',
             'pangkat',
-            'tmt_jabatan',
+            [
+                'attribute' => 'tmt_jabatan',
+
+                'value' => function ($model) {
+
+                    return Yii::$app->formatter->asDateTime($model->tmt_jabatan, 'php:d-m-Y');
+                },
+
+            ],
             [
                 'attribute' => 'sk',
                 'format' => 'raw',
