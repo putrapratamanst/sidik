@@ -209,7 +209,7 @@
                                     </p>
                                 </div>
                                 <div class="col-md-5">
-                                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="<?= Yii::$app->request->baseUrl ?>/image/5.jpeg" data-holder-rendered="true" style="width: auto; height: auto;">
+                                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="<?= Yii::$app->request->baseUrl ?>/image/11.jpeg" data-holder-rendered="true" style="width: auto; height: auto;">
                                 </div>
                             </div>
                         </div>
@@ -238,7 +238,7 @@
                                     </p>
                                 </div>
                                 <div class="col-md-5">
-                                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="<?= Yii::$app->request->baseUrl ?>/image/3.jpeg" data-holder-rendered="true" style="width: auto; height: auto;">
+                                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="<?= Yii::$app->request->baseUrl ?>/image/2.jpeg" data-holder-rendered="true" style="width: auto; height: auto;">
                                 </div>
                             </div>
                         </div>
@@ -268,7 +268,7 @@
                                     </p>
                                 </div>
                                 <div class="col-md-5 order-md-1">
-                                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="<?= Yii::$app->request->baseUrl ?>/image/4.jpeg" data-holder-rendered="true" style="width: auto; height: auto;">
+                                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="<?= Yii::$app->request->baseUrl ?>/image/12.jpeg" data-holder-rendered="true" style="width: auto; height: auto;">
                                 </div>
                             </div>
                         </div>
@@ -371,7 +371,7 @@
                                     </p>
                                 </div>
                                 <div class="col-md-5 ">
-                                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="<?= Yii::$app->request->baseUrl ?>/image/1.jpeg" data-holder-rendered="true" style="width: auto; height: auto;">
+                                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="<?= Yii::$app->request->baseUrl ?>/image/5.jpeg" data-holder-rendered="true" style="width: auto; height: auto;">
                                 </div>
                             </div>
                         </div>
