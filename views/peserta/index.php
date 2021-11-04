@@ -42,6 +42,9 @@ $this->params['breadcrumbs'][] = $this->title;
                 'attribute' => 'tmt_jabatan',
 
                 'value' => function ($model) {
+                    if ($model->tmt_jabatan == "0000-00-00"){
+                        return "0000-00-00";
+                    }
 
                     return Yii::$app->formatter->asDateTime($model->tmt_jabatan, 'php:d-m-Y');
                 },
@@ -71,6 +74,9 @@ $this->params['breadcrumbs'][] = $this->title;
                         'attribute' => 'tmt_jabatan',
         
                         'value' => function ($model) {
+                            if ($model->tmt_jabatan == "0000-00-00"){
+                                return "0000-00-00";
+                            }
         
                             return Yii::$app->formatter->asDateTime($model->tmt_jabatan, 'php:d-m-Y');
                         },

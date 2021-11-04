@@ -238,7 +238,7 @@
                                     </p>
                                 </div>
                                 <div class="col-md-5">
-                                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="<?= Yii::$app->request->baseUrl ?>/image/2.jpeg" data-holder-rendered="true" style="width: auto; height: auto;">
+                                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="<?= Yii::$app->request->baseUrl ?>/image/10.jpeg" data-holder-rendered="true" style="width: auto; height: auto;">
                                 </div>
                             </div>
                         </div>

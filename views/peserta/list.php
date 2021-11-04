@@ -147,6 +147,9 @@ if (!Yii::$app->user->isGuest) {
                         'attribute' => 'tmt_jabatan',
         
                         'value' => function ($model) {
+                            if ($model->tmt_jabatan == "0000-00-00"){
+                                return "0000-00-00";
+                            }
         
                             return Yii::$app->formatter->asDateTime($model->tmt_jabatan, 'php:d-m-Y');
                         },
@@ -191,6 +194,9 @@ if (!Yii::$app->user->isGuest) {
                         'attribute' => 'tmt_jabatan',
         
                         'value' => function ($model) {
+                            if ($model->tmt_jabatan == "0000-00-00"){
+                                return "0000-00-00";
+                            }
         
                             return Yii::$app->formatter->asDateTime($model->tmt_jabatan, 'php:d-m-Y');
                         },
