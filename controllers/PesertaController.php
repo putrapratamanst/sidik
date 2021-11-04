@@ -316,17 +316,17 @@ class PesertaController extends Controller
             // $query =  $query->limit(8);
             $query = $query->limit(8)->orderBy(['tmt_jabatan' => SORT_ASC])->all();
 
-            $dataInject = Peserta::find()->where(['type' => $type])->where(['nip' => 198108082009041005])->all();
-            array_push($query, $dataInject[0]);
+            // $dataInject = Peserta::find()->where(['type' => $type])->where(['nip' => 198108082009041005])->all();
+            // array_push($query, $dataInject[0]);
 
-            $new = [];
-            foreach ($query as $key => $value) {
-                if ($value->getAttributes()['nip'] == 197704082011011002) {
-                    continue;
-                }
-                array_push($new, $value);
-            }
-            $query = $new;
+            // $new = [];
+            // foreach ($query as $key => $value) {
+            //     if ($value->getAttributes()['nip'] == 197704082011011002) {
+            //         continue;
+            //     }
+            //     array_push($new, $value);
+            // }
+            // $query = $new;
         }
         if ($type == "struktural_pka") {
             $query = $query->limit(15)->orderBy(['tmt_jabatan' => SORT_ASC])->all();;
