@@ -202,7 +202,7 @@
                                     <p class="lead">
                                     <ul>
                                         <li>Surat Usulan Dari Pejabat Yang Berwenang/Sekretaris Daerah Kabupaten Kepada Deputi Bidang Diklat Aparatur LAN Melalui Sistem Aplikasi “SIPENDAR”;</li>
-                                        <li>Foto Copy SK Pangkat Terakhir Minimal Berpangakat Pembina (IV/a)</li>
+                                        <li>Foto Copy SK Pangkat Terakhir Minimal Berpangkat Pembina (IV/a)</li>
                                         <li>Foto copy SK Jabatan Eselon II, Bagi Yang Eselon III Harus Sudah Lulus Ujian Seleksi Calon Peserta Diklat PKN (PIM TK.II);</li>
                                         <li>Batas Usia Minimal Kelahiran 1968. </li>
                                     </ul>
@@ -291,7 +291,7 @@
                                     <ul>
                                         <li>Surat Usulan Dari Pejabat Yang Berwenang/Sekeretaris Daerah Kabupaten Kepada Kepala Badan Pengembangan SDM Kemendagri Melalui Badan Kepegawaian dan Pengembangan SDM Kabupaten Padang Lawas;</li>
                                         <li>Foto Copy SK Pangkat Terakhir Minimal Berpangkat Penata TK.I (III/d)</li>
-                                        <li>Foto copy SK Jabatan Eselon III.a (Administrator};</li>
+                                        <li>Foto copy SK Jabatan Eselon III.a (Administrator);</li>
                                         <li>Batas Usia Minimal Kelahiran 1968. </li>
                                     </ul>
                                     </p>
@@ -347,7 +347,7 @@
                         <div class="card-body">
                             <div class="row featurette">
                                 <div class="col-md-7">
-                                    <h2 class="featurette-heading">SYARAT PENGURUSAN DIKLAT CALON KEPALA SEKOLAH :</h2>
+                                    <h2 class="featurette-heading">SYARAT PENGAJUAN IZIN BELAJAR :</h2>
                                     <p class="lead">
                                     <ul>
                                         <li>Surat Pengantar dari Kepala SKPD </li>
